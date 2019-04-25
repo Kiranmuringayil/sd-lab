@@ -1,0 +1,192 @@
+student@T10:~$ echo helloworld;
+helloworld
+student@T10:~$ ls
+ anjut     Documents   examples.desktop   Pictures   PycharmProjects   rethrow.cpp  'sem 1q.cpp'   snap       'try catch'      'try catch.o'
+ Desktop   Downloads   Music              Public     rethrow           rethrow.o    'sem2 q.cpp'   Templates  'try catch.cpp'   Videos
+student@T10:~$ mk dir AJCE
+mk: command not found
+student@T10:~$ mkdir ajce;
+student@T10:~$ ls
+ ajce      Documents          Music      PycharmProjects   rethrow.o     snap        'try catch.cpp'
+ anjut     Downloads          Pictures   rethrow          'sem 1q.cpp'   Templates   'try catch.o'
+ Desktop   examples.desktop   Public     rethrow.cpp      'sem2 q.cpp'  'try catch'   Videos
+student@T10:~$ mkdir ajce
+mkdir: cannot create directory ‘ajce’: File exists
+student@T10:~$ cd ajce;
+student@T10:~/ajce$ pwd;
+/home/student/ajce
+student@T10:~/ajce$ echo -e "hello world";
+hello world
+student@T10:~/ajce$ mkdir MCA;
+student@T10:~/ajce$ PWD;
+PWD: command not found
+student@T10:~/ajce$ pwd;
+/home/student/ajce
+student@T10:~/ajce$ cd mca;
+bash: cd: mca: No such file or directory
+student@T10:~/ajce$ ls;
+MCA
+student@T10:~/ajce$ cd MCA;
+student@T10:~/ajce/MCA$ pwd;
+/home/student/ajce/MCA
+student@T10:~/ajce/MCA$ echo -e "hello world how are you";
+hello world how are you
+student@T10:~/ajce/MCA$ mkdir RMCA;
+student@T10:~/ajce/MCA$ mkdir LMCA;
+\student@T10:~/ajce/MCA$ mkddir INTMCA;
+
+Command 'mkddir' not found, did you mean:
+
+  command 'mkdir' from deb coreutils
+
+Try: apt install <deb name>
+
+student@T10:~/ajce/MCA$ mkdir INTMCA;
+student@T10:~/ajce/MCA$ ls
+INTMCA  LMCA  RMCA
+student@T10:~/ajce/MCA$ cd RMCA;
+student@T10:~/ajce/MCA/RMCA$ pwd;
+/home/student/ajce/MCA/RMCA
+student@T10:~/ajce/MCA/RMCA$ cd /;
+student@T10:/$ ls;
+bin   cdrom  etc   initrd.img      lib    lost+found  mnt  proc  run   snap  sys  usr  vmlinuz
+boot  dev    home  initrd.img.old  lib64  media       opt  root  sbin  srv   tmp  var  vmlinuz.old
+student@T10:/$ cd ^C
+student@T10:/$ cd /home/student/ajce/MCA/RMCA;
+student@T10:~/ajce/MCA/RMCA$ cd :
+bash: cd: :: No such file or directory
+student@T10:~/ajce/MCA/RMCA$ cd ..
+student@T10:~/ajce/MCA$ pwd
+/home/student/ajce/MCA
+student@T10:~/ajce/MCA$ cd ~
+student@T10:~$ pwd;
+/home/student
+student@T10:~$ cd /;
+student@T10:/$ pwd;
+/
+student@T10:/$ echo -e "hello \n world";
+hello 
+ world
+student@T10:/$ echo -n "hello world";
+hello worldstudent@T10:/$ read a;
+5
+student@T10:/$ read -p "enter a number" a;
+enter a number5
+student@T10:/$ read -s -p "enter password";
+enter passwordstudent@T10:/$ man echo;
+student@T10:/$ $man -a intro;
+-a: command not found
+student@T10:/$ cd home;
+student@T10:/home$ cd ajce;
+bash: cd: ajce: No such file or directory
+student@T10:/home$ ls
+android  mca  student
+student@T10:/home$ cd student
+student@T10:~$ ls
+ ajce      Documents          Music      PycharmProjects   rethrow.o     snap        'try catch.cpp'
+ anjut     Downloads          Pictures   rethrow          'sem 1q.cpp'   Templates   'try catch.o'
+ Desktop   examples.desktop   Public     rethrow.cpp      'sem2 q.cpp'  'try catch'   Videos
+student@T10:~$ cd ajce
+student@T10:~/ajce$ cd MCA
+student@T10:~/ajce/MCA$ cd LMCA
+student@T10:~/ajce/MCA/LMCA$ echo -e "hello world";
+hello world
+student@T10:~/ajce/MCA/LMCA$ cd ..
+student@T10:~/ajce/MCA$ ls
+INTMCA  LMCA  RMCA
+student@T10:~/ajce/MCA$ ls -l
+total 12
+drwxr-xr-x 2 student student 4096 Jan 31 14:39 INTMCA
+drwxr-xr-x 2 student student 4096 Jan 31 14:38 LMCA
+drwxr-xr-x 2 student student 4096 Jan 31 14:38 RMCA
+student@T10:~/ajce/MCA$ ls >out.txt
+student@T10:~/ajce/MCA$ ls *
+out.txt
+
+INTMCA:
+
+LMCA:
+
+RMCA:
+student@T10:~/ajce/MCA$ ls -d */
+INTMCA/  LMCA/  RMCA/
+student@T10:~/ajce/MCA$ ls -d $pwd/*
+/bin   /cdrom  /etc   /initrd.img      /lib    /lost+found  /mnt  /proc  /run   /snap  /sys  /usr  /vmlinuz
+/boot  /dev    /home  /initrd.img.old  /lib64  /media       /opt  /root  /sbin  /srv   /tmp  /var  /vmlinuz.old
+student@T10:~/ajce/MCA$ cd ajce
+bash: cd: ajce: No such file or directory
+student@T10:~/ajce/MCA$ ls -t
+out.txt  INTMCA  LMCA  RMCA
+student@T10:~/ajce/MCA$ ls -s
+total 16
+4 INTMCA  4 LMCA  4 out.txt  4 RMCA
+student@T10:~/ajce/MCA$ ls /
+bin   cdrom  etc   initrd.img      lib    lost+found  mnt  proc  run   snap  sys  usr  vmlinuz
+boot  dev    home  initrd.img.old  lib64  media       opt  root  sbin  srv   tmp  var  vmlinuz.old
+student@T10:~/ajce/MCA$ ls ..
+MCA
+student@T10:~/ajce/MCA$ ls ~
+ ajce      Documents          Music      PycharmProjects   rethrow.o     snap        'try catch.cpp'
+ anjut     Downloads          Pictures   rethrow          'sem 1q.cpp'   Templates   'try catch.o'
+ Desktop   examples.desktop   Public     rethrow.cpp      'sem2 q.cpp'  'try catch'   Videos
+student@T10:~/ajce/MCA$ ls / >out.txt
+student@T10:~/ajce/MCA$ ls *
+out.txt
+
+INTMCA:
+
+LMCA:
+
+RMCA:
+student@T10:~/ajce/MCA$ cd home;
+bash: cd: home: No such file or directory
+student@T10:~/ajce/MCA$ cd Home;
+bash: cd: Home: No such file or directory
+student@T10:~/ajce/MCA$ cd home
+bash: cd: home: No such file or directory
+student@T10:~/ajce/MCA$ ls -R
+.:
+INTMCA  LMCA  out.txt  RMCA
+
+./INTMCA:
+
+./LMCA:
+
+./RMCA:
+student@T10:~/ajce/MCA$ cd /
+student@T10:/$ cd ajce
+bash: cd: ajce: No such file or directory
+student@T10:/$ ls
+bin   cdrom  etc   initrd.img      lib    lost+found  mnt  proc  run   snap  sys  usr  vmlinuz
+boot  dev    home  initrd.img.old  lib64  media       opt  root  sbin  srv   tmp  var  vmlinuz.old
+student@T10:/$ cd home
+student@T10:/home$ cd ajce
+bash: cd: ajce: No such file or directory
+student@T10:/home$ ls
+android  mca  student
+student@T10:/home$ cd mca
+student@T10:/home/mca$ cd lmca
+bash: cd: lmca: No such file or directory
+student@T10:/home/mca$ ls
+Desktop  Documents  Downloads  examples.desktop  mozilla.pdf  Music  Pictures  Public  snap  Templates  Videos
+student@T10:/home/mca$ cd ~
+student@T10:~$ ls
+ ajce      Documents          Music      PycharmProjects   rethrow.o     snap        'try catch.cpp'
+ anjut     Downloads          Pictures   rethrow          'sem 1q.cpp'   Templates   'try catch.o'
+ Desktop   examples.desktop   Public     rethrow.cpp      'sem2 q.cpp'  'try catch'   Videos
+student@T10:~$ cd ajce
+student@T10:~/ajce$ ls
+MCA
+student@T10:~/ajce$ cd MCA
+student@T10:~/ajce/MCA$ ls -l
+total 16
+drwxr-xr-x 2 student student 4096 Jan 31 14:39 INTMCA
+drwxr-xr-x 2 student student 4096 Jan 31 14:38 LMCA
+-rw-r--r-- 1 student student  153 Jan 31 15:03 out.txt
+drwxr-xr-x 2 student student 4096 Jan 31 14:38 RMCA
+student@T10:~/ajce/MCA$ man pwd
+student@T10:~/ajce/MCA$ man ls
+student@T10:~/ajce/MCA$ man ls
+student@T10:~/ajce/MCA$ man ls
+student@T10:~/ajce/MCA$ 
+

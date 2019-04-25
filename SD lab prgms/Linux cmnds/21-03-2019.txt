@@ -1,0 +1,87 @@
+student@T22:~$ vi kiran.sh
+student@T22:~$ chmod +x kiran.sh
+student@T22:~$ ./kiran.sh
+helloo
+student@T22:~$ gedit abc.sh
+student@T22:~$ chmod +x abc.sh
+student@T22:~$ ./abc.sh
+How are you
+student@T22:~$ gedit fp.sh
+student@T22:~$ chmod +x fp.sh
+student@T22:~$ ./fp.sh
+Hello World!
+The date today is Thu Mar 21 14:30:10 IST 2019
+The current directory is /home/student
+student@T22:~$ gedit prog2.sh
+student@T22:~$ chmod +x prog2.sh
+student@T22:~$ ./prog2.sh
+value of var is test string
+student@T22:~$ gedit prog3.sh
+student@T22:~$ chmod +x prog3.sh
+student@T22:~$ ./prog3.sh
+./prog3.sh: line 2: unexpected EOF while looking for matching ``'
+./prog3.sh: line 4: syntax error: unexpected end of file
+student@T22:~$ gedit prog3.sh
+student@T22:~$ chmod +x prog3.sh
+student@T22:~$ ./prog3.sh
+value of var is $var
+student@T22:~$ gedit prog4.sh
+student@T22:~$ chmod +x prog4.sh
+student@T22:~$ ./prog4.sh
+The command is ./prog4.sh
+The first argument is 
+The Second argument is 
+The Third argument is 
+The fourth argument is 
+student@T22:~$ ./prog4.sh a b c d
+The command is ./prog4.sh
+The first argument is a
+The Second argument is b
+The Third argument is c
+The fourth argument is d
+student@T22:~$ gedit prog4.sh
+student@T22:~$ ./prog4.sh a b c d
+The command is ./prog4.sh
+The first argument is a
+The Second argument is b
+The Third argument is c
+The fourth argument is d
+The no. of arguments is 4
+The no. of arguments passed a b c d
+The no. of arguments passed a b c d
+student@T22:~$ gedit prog4.sh
+student@T22:~$ ./prog4.sh a b c d
+The command is ./prog4.sh
+The first argument is a
+The Second argument is b
+The Third argument is c
+The fourth argument is d
+The no. of arguments is 4
+The arguments passed a b c d
+The arguments passed a b c d
+student@T22:~$ gedit prog5.sh
+student@T22:~$ gedit prog5.sh
+student@T22:~$ chmod +x prog5.sh
+student@T22:~$ ./prog5.sh
+
+
+student@T22:~$ gedit prg6.sh
+student@T22:~$ chmod +x prg6.sh
+student@T22:~$ ./prg6.sh
+5+10=15
+student@T22:~$ gedit prg6.sh
+student@T22:~$ chmod +x prg6.sh
+student@T22:~$ gedit prg6.sh
+student@T22:~$ ./prg6.sh
+5+10=15
+Enter two numbers : 5 7
+5+7=12
+student@T22:~$ gedit prg7.sh
+student@T22:~$ chmod +x prg7.sh
+student@T22:~$ ./prg7.sh
+Sum is 10+20
+student@T22:~$ gedit prg7.sh
+student@T22:~$ ./prg7.sh
+Sum is 30
+student@T22:~$ 
+

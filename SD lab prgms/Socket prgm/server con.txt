@@ -1,0 +1,21 @@
+student@T22:~$ java server
+Error: Could not find or load main class server
+student@T22:~$ cd sd
+student@T22:~/sd$ java server
+waiting for client.........
+client connected 
+client:>hai
+hai
+
+client:>heloo
+poda
+client:>sry
+go man
+client:>ente ponno
+kuttaa
+bye
+
+client:>hi
+client:>m
+student@T22:~/sd$ 
+

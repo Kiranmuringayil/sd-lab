@@ -1,0 +1,218 @@
+student@T21:~$ cd aajce
+bash: cd: aajce: No such file or directory
+student@T21:~$ cd ajce
+student@T21:~/ajce$ gedit pg1.sh
+student@T21:~/ajce$ chmod +x pg1.sh
+student@T21:~/ajce$ ./pg1.sh 1 3 
+1 is equal to 1
+student@T21:~/ajce$ gedit pg1.sh
+student@T21:~/ajce$ ./pg1.sh 1 3 
+1 is equal to 3
+student@T21:~/ajce$ gedit pg1.sh
+student@T21:~/ajce$ ./pg1.sh 1 3 
+1 is less than 3
+student@T21:~/ajce$ ./pg1.sh 5 3 
+5 is greater than 3
+student@T21:~/ajce$ ./pg1.sh 3 3 
+3 is equal to 3
+student@T21:~/ajce$ gedit pg2.sh
+student@T21:~/ajce$ chmod +x pg2.sh
+student@T21:~/ajce$ ./pg2.sh  
+Enter a number
+4
+./pg2.sh: line 3: [: too many arguments
+Number is odd
+student@T21:~/ajce$ ./pg2.sh  
+Enter a number
+5
+./pg2.sh: line 3: [: too many arguments
+Number is odd
+student@T21:~/ajce$ gedit pg2.sh
+student@T21:~/ajce$ ./pg2.sh  
+Enter a number
+2
+Number is even
+student@T21:~/ajce$ ./pg2.sh  
+Enter a number
+5
+Number is odd
+student@T21:~/ajce$ ./pg2.sh  
+Enter a number
+111
+Number is odd
+student@T21:~/ajce$ gedit pg3.sh
+student@T21:~/ajce$ ./pg3.sh  
+bash: ./pg3.sh: Permission denied
+student@T21:~/ajce$ gedit pg3.sh
+student@T21:~/ajce$ ./pg3.sh  
+bash: ./pg3.sh: Permission denied
+student@T21:~/ajce$ gedit pg3.sh
+student@T21:~/ajce$ ./pg3.sh  
+bash: ./pg3.sh: Permission denied
+student@T21:~/ajce$ gedit pg3.sh
+student@T21:~/ajce$ chmod +x pg3.sh
+student@T21:~/ajce$ ./pg3.sh  
+Enter Year:
+2010
+2010 is not a Leap Year!
+student@T21:~/ajce$ ./pg3.sh  
+Enter Year:
+2004
+2004 is Leap Year!
+student@T21:~/ajce$ gedit pg3.sh
+student@T21:~/ajce$ chmod +x pg3.sh
+student@T21:~/ajce$ ./pg3.sh  
+Enter Year:
+2008
+./pg3.sh: line 4: % 4 : syntax error: operand expected (error token is "% 4 ")
+./pg3.sh: line 5: [: -eq: unary operator expected
+ is not a Leap Year!
+student@T21:~/ajce$ gedit pg3.sh
+student@T21:~/ajce$ ./pg3.sh  
+Enter Year:
+2010
+2 is not a Leap Year!
+student@T21:~/ajce$ gedit pg3.sh
+student@T21:~/ajce$ ./pg3.sh  
+Enter Year:
+2008
+./pg3.sh: line 4: % 4 : syntax error: operand expected (error token is "% 4 ")
+./pg3.sh: line 5: [: -eq: unary operator expected
+ is not a Leap Year!
+student@T21:~/ajce$ gedit pg3.sh
+student@T21:~/ajce$ ./pg3.sh  
+Enter Year:
+2008
+./pg3.sh: line 4: % 4 : syntax error: operand expected (error token is "% 4 ")
+./pg3.sh: line 5: [: -eq: unary operator expected
+ is not a Leap Year!
+student@T21:~/ajce$ gedit pg3.sh
+student@T21:~/ajce$ ./pg3.sh  
+Enter Year:
+2008
+./pg3.sh: line 4: % 4 : syntax error: operand expected (error token is "% 4 ")
+./pg3.sh: line 5: [: -eq: unary operator expected
+ is not a Leap Year!
+student@T21:~/ajce$ gedit pg3.sh
+student@T21:~/ajce$ ./pg3.sh  
+Enter Year:
+2010
+2 is not a Leap Year!
+student@T21:~/ajce$ ./pg3.sh  
+Enter Year:
+2008
+0 is Leap Year!
+student@T21:~/ajce$ gedit pg3.sh
+student@T21:~/ajce$ ./pg3.sh  
+Enter Year:
+2008
+2008 is Leap Year!
+student@T21:~/ajce$ gedit pg4.sh
+student@T21:~/ajce$ chmod +x pg4.sh
+student@T21:~/ajce$ ./pg4.sh  
+Enter a character
+a
+./pg4.sh: line 8: syntax error near unexpected token `elif'
+./pg4.sh: line 8: `elif '
+student@T21:~/ajce$ ./pg4.sh  
+Enter a character
+5
+./pg4.sh: line 8: syntax error near unexpected token `elif'
+./pg4.sh: line 8: `elif '
+student@T21:~/ajce$ 
+student@T21:~/ajce$ gedit pg4.sh
+student@T21:~/ajce$ ./pg4.sh  
+Enter a character
+k
+./pg4.sh: line 8: syntax error near unexpected token `else'
+./pg4.sh: line 8: `else '
+student@T21:~/ajce$ gedit pg4.sh
+student@T21:~/ajce$ gedit pg6.sh
+student@T21:~/ajce$ chmod +x pg6.sh
+student@T21:~/ajce$ ./pg6.sh  
+Enter a number
+2
+ 2 
+ 4 
+ 6 
+ 8 
+ 10 
+ 12 
+ 14 
+ 16 
+ 18 
+ 20 
+student@T21:~/ajce$ ./pg6.sh  
+Enter a number
+5
+ 5 
+ 10 
+ 15 
+ 20 
+ 25 
+ 30 
+ 35 
+ 40 
+ 45 
+ 50 
+student@T21:~/ajce$ gedit pg7.sh
+student@T21:~/ajce$ chmod +x pg7.sh
+student@T21:~/ajce$ ./pg7.sh  
+Enter a number
+10
+ 1 
+ 2 
+ 3 
+ 5 
+ 7 
+student@T21:~/ajce$ gedit pg6.sh
+student@T21:~/ajce$ gedit pg8.sh
+student@T21:~/ajce$ chmod +x pg8.sh
+student@T21:~/ajce$ ./pg8.sh  
+enter n value
+10
+./pg8.sh: line 6: 0%: syntax error: operand expected (error token is "%")
+Sum of odd numbers = 0
+student@T21:~/ajce$ gedit pg8.sh
+student@T21:~/ajce$ ./pg8.sh  
+enter n value
+10
+Sum of odd numbers = 25
+student@T21:~/ajce$ gedit pg4.sh
+student@T21:~/ajce$ gedit pg5.sh
+student@T21:~/ajce$ chmod +x pg5.sh
+student@T21:~/ajce$ ./pg5.sh  
+Enter limit
+10
+ 10 
+ 9 
+ 8 
+ 7 
+ 6 
+ 5 
+ 4 
+ 3 
+ 2 
+ 1 
+student@T21:~/ajce$ gedit pg4.sh
+student@T21:~/ajce$ chmod +x pg4.sh
+student@T21:~/ajce$ ./pg4.sh  
+Enter a character
+a
+./pg4.sh: line 5: [: too many arguments
+It is consonant
+student@T21:~/ajce$ gedit pg4.sh
+student@T21:~/ajce$ ./pg4.sh  
+Enter a character
+a
+It is a vowel
+student@T21:~/ajce$ ./pg4.sh  
+Enter a character
+b
+It is consonant
+student@T21:~/ajce$ ./pg4.sh  
+Enter a character
+7
+It is not an alphabet
+student@T21:~/ajce$ 
+

@@ -1,0 +1,175 @@
+student@T22:~$ cd ajce
+student@T22:~/ajce$ man head
+student@T22:~/ajce$ ls
+a.txt  b.txt  f1.txt  rmca  stud  z.txt
+student@T22:~/ajce$ cat a.txt
+hellooo
+student@T22:~/ajce$ cat z.txt
+hai how are you...
+asd dgdfg bghtyb sdfsfrdsv
+asdasac sdfdtgbtyhnuj dfrgderjhsuif dfnbdffhb
+hsgduyenbceyhw asdjnbeuncds dsabsj asjdnnc
+student@T22:~/ajce$ cd rmca
+student@T22:~/ajce/rmca$ ls
+a.txt  b.txt  c.txt  k.txt  lmca  l.txt  q.txt  s.txt  wl.txt  w.txt
+student@T22:~/ajce/rmca$ cat hd.txt
+cat: hd.txt: No such file or directory
+student@T22:~/ajce/rmca$ cat > hd.txt
+j k
+jomy
+kiran
+joseph
+sandeep
+vishnu
+rocky
+arjun
+siju
+^C
+student@T22:~/ajce/rmca$ cat > tl.txt
+krithi
+limi
+anju
+teena 
+riya
+niya
+linchu        
+asha
+dona
+^C
+student@T22:~/ajce/rmca$ head -n 7 hd.txt
+j k
+jomy
+kiran
+joseph
+sandeep
+vishnu
+rocky
+student@T22:~/ajce/rmca$ tail -n 4 hd.txt
+vishnu
+rocky
+arjun
+siju
+student@T22:~/ajce/rmca$ head -n 7 hd.txt/tail -n 4 hd.txt
+head: cannot open 'hd.txt/tail' for reading: Not a directory
+==> hd.txt <==
+j k
+jomy
+kiran
+joseph
+student@T22:~/ajce/rmca$ head -n 7 hd.txt|tail -n 4 hd.txt
+vishnu
+rocky
+arjun
+siju
+student@T22:~/ajce/rmca$ head -n 3 hd.txt tl.txt
+==> hd.txt <==
+j k
+jomy
+kiran
+
+==> tl.txt <==
+krithi
+limi
+anju
+student@T22:~/ajce/rmca$ head -n 9 hd.txt tl.txt
+==> hd.txt <==
+j k
+jomy
+kiran
+joseph
+sandeep
+vishnu
+rocky
+arjun
+siju
+
+==> tl.txt <==
+krithi
+limi
+anju
+teena
+riya
+niya
+linchu
+asha
+dona
+student@T22:~/ajce/rmca$ head -c 9 hd.txt
+j k
+jomy
+student@T22:~/ajce/rmca$ head -c 10 hd.txt
+j k
+jomy
+kstudent@T22:~/ajce/rmca$ head -c 50 hd.txt
+j k
+jomy
+kiran
+joseph
+sandeep
+vishnu
+rocky
+arjun
+sstudent@T22:~/ajce/rmca$ head -q 5 hd.txt
+head: cannot open '5' for reading: No such file or directory
+j k
+jomy
+kiran
+joseph
+sandeep
+vishnu
+rocky
+arjun
+siju
+student@T22:~/ajce/rmca$ head -q hd.txt tl.txt
+j k
+jomy
+kiran
+joseph
+sandeep
+vishnu
+rocky
+arjun
+siju
+krithi
+limi
+anju
+teena
+riya
+niya
+linchu
+asha
+dona
+student@T22:~/ajce/rmca$ head -v hd.txt
+==> hd.txt <==
+j k
+jomy
+kiran
+joseph
+sandeep
+vishnu
+rocky
+arjun
+siju
+student@T22:~/ajce/rmca$ tail -v tl.txt
+==> tl.txt <==
+krithi
+limi
+anju
+teena
+riya
+niya
+linchu
+asha
+dona
+student@T22:~/ajce/rmca$ tail -f tl.txt
+krithi
+limi
+anju
+teena
+riya
+niya
+linchu
+asha
+dona
+^C
+student@T22:~/ajce/rmca$ 
+

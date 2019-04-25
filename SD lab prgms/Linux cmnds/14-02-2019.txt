@@ -1,0 +1,105 @@
+student@T22:~$ cd ajce
+student@T22:~/ajce$ cd rmca
+student@T22:~/ajce/rmca$ pwd
+/home/student/ajce/rmca
+student@T22:~/ajce/rmca$ cd ..
+student@T22:~/ajce$ cp a.txt /home/student/ajce/stud
+student@T22:~/ajce$ cd stud
+student@T22:~/ajce/stud$ ls
+a.txt
+student@T22:~/ajce/stud$ cd /
+student@T22:/$ cd ajce
+bash: cd: ajce: No such file or directory
+student@T22:/$ cd ajce
+bash: cd: ajce: No such file or directory
+student@T22:/$ cd ~
+student@T22:~$ cd ajce
+student@T22:~/ajce$ cd rmca
+student@T22:~/ajce/rmca$ cd lmca
+student@T22:~/ajce/rmca/lmca$ cp ab /home/student/ajce
+cp: -r not specified; omitting directory 'ab'
+student@T22:~/ajce/rmca/lmca$ cp -r ab /home/student/ajce
+student@T22:~/ajce/rmca/lmca$ cd ..
+student@T22:~/ajce/rmca$ cd ..
+student@T22:~/ajce$ cp -i a.txt b.txt
+cp: overwrite 'b.txt'? y
+student@T22:~/ajce$ cp -i a.txt b.txt
+cp: overwrite 'b.txt'? n
+student@T22:~/ajce$ cp -n a.txt b.txt
+student@T22:~/ajce$ cp -v a.txt b.txt
+'a.txt' -> 'b.txt'
+student@T22:~/ajce$ read -n 5 -p "enter 5 number"
+enter 5 number3 7
+student@T22:~/ajce$ read a
+5
+student@T22:~/ajce$ echo a
+a
+student@T22:~/ajce$ echo hai
+hai
+student@T22:~/ajce$ echo 'q'
+q
+student@T22:~/ajce$ echo "a"
+a
+student@T22:~/ajce$ rm -r ab
+student@T22:~/ajce$ ls
+a.txt  b.txt  mca.txt  rmca  stud
+student@T22:~/ajce$ rm mca.txt
+student@T22:~/ajce$ cd rmca
+student@T22:~/ajce/rmca$ cat > c.txt
+kooii
+^C
+student@T22:~/ajce/rmca$ cat c.txt
+kooii
+student@T22:~/ajce/rmca$ cat -n c.txt
+     1	kooii
+student@T22:~/ajce/rmca$ cd ..
+student@T22:~/ajce$ cat a.txt > b.txt
+student@T22:~/ajce$ cat -s a.txt
+hellooo
+student@T22:~/ajce$ cat a.txt >> b.txt
+student@T22:~/ajce$ mkdir abc
+student@T22:~/ajce$ ls
+abc  a.txt  b.txt  rmca  stud
+student@T22:~/ajce$ rm -r abc
+student@T22:~/ajce$ ls
+a.txt  b.txt  rmca  stud
+student@T22:~/ajce$ cd ~
+student@T22:~$ cd ajce
+student@T22:~/ajce$ cd /
+student@T22:/$ cd ajce
+bash: cd: ajce: No such file or directory
+student@T22:/$ cd ~
+student@T22:~$ cd ajce
+student@T22:~/ajce$ pwd
+/home/student/ajce
+student@T22:~/ajce$ echo *
+a.txt b.txt rmca stud
+student@T22:~/ajce$ cat -b a.txt
+     1	hellooo
+student@T22:~/ajce$ ls -r
+stud  rmca  b.txt  a.txt
+student@T22:~/ajce$ ls -R
+.:
+a.txt  b.txt  rmca  stud
+
+./rmca:
+a.txt  b.txt  c.txt  lmca
+
+./rmca/lmca:
+ab  a.txt  b.txt  vc
+
+./rmca/lmca/ab:
+
+./rmca/lmca/vc:
+
+./stud:
+a.txt
+student@T22:~/ajce$ cat a.txt b.txt
+hellooo
+hellooo
+hellooo
+student@T22:~/ajce$ cat a.txt c.txt
+hellooo
+cat: c.txt: No such file or directory
+student@T22:~/ajce$ 
+

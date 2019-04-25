@@ -1,0 +1,174 @@
+student@T22:~$ cd sd
+student@T22:~/sd$ gedit twoway.sh
+student@T22:~/sd$ gedit server.java
+student@T22:~/sd$ javac server.java
+student@T22:~/sd$ gedit client.java
+student@T22:~/sd$ gedit server.java
+student@T22:~/sd$ javac server.java
+student@T22:~/sd$ javac client.java
+client.java:6: error: ';' expected
+        public static void main(String[] args) throws IOException 
+                                                                 ^
+client.java:9: error: <identifier> expected
+                System.out.println("Client connected to the server");
+                                  ^
+client.java:9: error: illegal start of type
+                System.out.println("Client connected to the server");
+                                   ^
+client.java:18: error: <identifier> expected
+                System.out.println("to Start the chat, type message and press Enter key"); 
+                                  ^
+client.java:18: error: illegal start of type
+                System.out.println("to Start the chat, type message and press Enter key"); 
+                                   ^
+client.java:20: error: illegal start of type
+                while(true)
+                ^
+client.java:20: error: illegal start of type
+                while(true)
+                      ^
+client.java:36: error: class, interface, or enum expected
+}
+^
+8 errors
+student@T22:~/sd$ gedit client.java
+student@T22:~/sd$ javac client.java
+student@T22:~/sd$ gedit client.java
+student@T22:~/sd$ 
+student@T22:~/sd$ 
+student@T22:~/sd$ 
+student@T22:~/sd$ 
+student@T22:~/sd$ 
+student@T22:~/sd$ 
+student@T22:~/sd$ 
+student@T22:~/sd$ 
+student@T22:~/sd$ 1
+1: command not found
+student@T22:~/sd$ java client
+Client connected to the server
+to Start the chat, type message and press Enter key
+hai
+server:>hai
+heloo
+server:>
+sry
+server:>poda
+ente ponno
+server:>go man
+hi   
+server:>kuttaa
+m
+server:>bye
+bye
+student@T22:~/sd$ ip config -a
+Object "config" is unknown, try "ip help".
+student@T22:~/sd$ ipconfig -a
+
+Command 'ipconfig' not found, did you mean:
+
+  command 'iwconfig' from deb wireless-tools
+  command 'ifconfig' from deb net-tools
+  command 'iconfig' from deb ipmiutil
+
+Try: apt install <deb name>
+
+student@T22:~/sd$ ifconfig -a
+enp3s0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 192.168.6.122  netmask 255.255.255.0  broadcast 192.168.6.255
+        inet6 fe80::bdce:f371:c0c4:103f  prefixlen 64  scopeid 0x20<link>
+        ether 1c:87:2c:71:89:33  txqueuelen 1000  (Ethernet)
+        RX packets 433299  bytes 52237222 (52.2 MB)
+        RX errors 0  dropped 579  overruns 0  frame 0
+        TX packets 9916  bytes 1436952 (1.4 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 1531  bytes 137033 (137.0 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 1531  bytes 137033 (137.0 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+student@T22:~/sd$ javac client.java
+student@T22:~/sd$ java client
+Client connected to the server
+to Start the chat, type message and press Enter key
+hii
+ggh
+ll
+kollam
+Exception in thread "main" java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:210)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:284)
+	at sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:326)
+	at sun.nio.cs.StreamDecoder.read(StreamDecoder.java:178)
+	at java.io.InputStreamReader.read(InputStreamReader.java:184)
+	at java.io.BufferedReader.fill(BufferedReader.java:161)
+	at java.io.BufferedReader.readLine(BufferedReader.java:324)
+	at java.io.BufferedReader.readLine(BufferedReader.java:389)
+	at client.main(client.java:25)
+student@T22:~/sd$ ggh
+
+Command 'ggh' not found, did you mean:
+
+  command 'gh' from deb gitsome
+
+Try: apt install <deb name>
+
+student@T22:~/sd$ ll
+total 152
+drwxr-xr-x  2 student student 4096 Apr  1 12:35 ./
+drwxr-xr-x 21 student student 4096 Apr  1 11:18 ../
+-rw-r--r--  1 student student 2280 Mar 21 16:10 21-03-2019.txt
+-rwxr-xr-x  1 student student   17 Mar 21 14:22 abc.sh*
+-rw-r--r--  1 student student 1586 Apr  1 12:35 client.class
+-rw-r--r--  1 student student 1729 Apr  1 12:35 client.java
+-rwxr-xr-x  1 student student  105 Mar 21 14:29 fp.sh*
+-rwxr-xr-x  1 student student   12 Mar 21 14:18 kiran.sh*
+-rwxr-xr-x  1 student student  154 Mar 25 11:29 pg10.sh*
+-rwxr-xr-x  1 student student  205 Mar 25 11:43 pg11.sh*
+-rwxr-xr-x  1 student student   62 Mar 25 11:53 pg12.sh*
+-rwxr-xr-x  1 student student   50 Mar 25 11:58 pg13.sh*
+-rwxr-xr-x  1 student student   54 Mar 25 12:03 pg14.sh*
+-rwxr-xr-x  1 student student   59 Mar 25 12:06 pg15.sh*
+-rwxr-xr-x  1 student student   67 Mar 25 12:15 pg16.sh*
+-rwxr-xr-x  1 student student  127 Mar 30 14:52 pg9.sh*
+-rwxr-xr-x  1 student student  106 Mar 21 15:07 prg6.sh*
+-rwxr-xr-x  1 student student   39 Mar 21 15:14 prg7.sh*
+-rw-rw-r--  1 student student  471 Mar 22 15:37 prim2d.sh
+-rwxr-xr-x  1 student student  297 Mar 22 14:58 prime2.sh*
+-rwxr-xr-x  1 student student  295 Mar 22 16:09 prime2.sh.save*
+-rwxr-xr-x  1 student student  290 Mar 22 15:34 prim.sh*
+-rwxr-xr-x  1 student student  278 Mar 22 16:09 prim.sh.save*
+-rwxr-xr-x  1 student student   61 Mar 21 14:36 prog2.sh*
+-rwxr-xr-x  1 student student   61 Mar 21 14:39 prog3.sh*
+-rwxr-xr-x  1 student student  251 Mar 21 14:51 prog4.sh*
+-rwxr-xr-x  1 student student   33 Mar 21 14:59 prog5.sh*
+-rwxr-xr-x  1 student student  361 Mar 19 15:59 pyramid.sh*
+-rw-r--r--  1 student student 1597 Apr  1 12:05 server.class
+-rw-r--r--  1 student student 1597 Apr  1 12:07 Server.class
+-rw-r--r--  1 student student 1649 Apr  1 12:07 server.java
+-rwxr-xr-x  1 student student  395 Mar 19 14:48 tri1.sh*
+-rwxr-xr-x  1 student student    1 Mar 19 14:43 tri.sh*
+-rwxr-xr-x  1 student student  132 Mar 30 14:46 w1.sh*
+-rwxr-xr-x  1 student student  315 Mar 30 15:04 w3.sh*
+-rwxr-xr-x  1 student student  204 Mar 30 15:13 w4.sh*
+-rwxr-xr-x  1 student student   63 Mar 30 14:32 while.sh*
+-rwxr-xr-x  1 student student   62 Mar 30 14:40 w.sh*
+student@T22:~/sd$ kollam
+kollam: command not found
+student@T22:~/sd$ java client
+Client connected to the server
+to Start the chat, type message and press Enter key
+hii
+server:>haha
+phaa
+server:>welcome
+koooiiii
+server:>bye
+bye
+student@T22:~/sd$ 
+

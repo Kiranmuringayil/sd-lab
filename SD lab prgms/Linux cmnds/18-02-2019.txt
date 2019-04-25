@@ -1,0 +1,118 @@
+student@T22:~$ cd ajce
+student@T22:~/ajce$ ls
+a.txt  b.txt  f1.txt  rmca  stud
+student@T22:~/ajce$ paste f1.txt
+1
+5
+9
+10
+15
+30
+35
+25
+asd
+fgh
+student@T22:~/ajce$ paste a.txt b.txt
+hellooo	hellooo
+	hellooo
+student@T22:~/ajce$ paste a.txt f1.txt
+hellooo	1
+	5
+	9
+	10
+	15
+	30
+	35
+	25
+	asd
+	fgh
+student@T22:~/ajce$ cat > z.txt
+hai how are you...         
+^C
+student@T22:~/ajce$ cd rmca
+student@T22:~/ajce/rmca$ cat > k.txt
+Joseph
+J K
+kiran
+Rocky
+Jomy
+Rocky bhaii
+^C
+student@T22:~/ajce/rmca$ cat > l.txt
+Kannur
+Kottayam
+Pala
+Kochi
+mumbai
+^C
+student@T22:~/ajce/rmca$ cat > s.txt
+10
+20
+30
+25
+5
+50
+^C
+student@T22:~/ajce/rmca$ 
+student@T22:~/ajce/rmca$ paste k.txt l.txt
+Joseph	Kannur
+J K	Kottayam
+kiran	Pala
+Rocky	Kochi
+Jomy	mumbai
+Rocky bhaii	
+student@T22:~/ajce/rmca$ paste k.txt l.txt s.txt
+Joseph	Kannur	10
+J K	Kottayam	20
+kiran	Pala	30
+Rocky	Kochi	25
+Jomy	mumbai	5
+Rocky bhaii		50
+student@T22:~/ajce/rmca$ paste -d "|" k.txt l.txt
+Joseph|Kannur
+J K|Kottayam
+kiran|Pala
+Rocky|Kochi
+Jomy|mumbai
+Rocky bhaii|
+student@T22:~/ajce/rmca$ paste -d "|," k.txt l.txt s.txt
+Joseph|Kannur,10
+J K|Kottayam,20
+kiran|Pala,30
+Rocky|Kochi,25
+Jomy|mumbai,5
+Rocky bhaii|,50
+student@T22:~/ajce/rmca$ paste -d ":" k.txt l.txt s.txt
+Joseph:Kannur:10
+J K:Kottayam:20
+kiran:Pala:30
+Rocky:Kochi:25
+Jomy:mumbai:5
+Rocky bhaii::50
+student@T22:~/ajce/rmca$ paste -s k.txt l.txt s.txt
+Joseph	J K	kiran	Rocky	Jomy	Rocky bhaii
+Kannur	Kottayam	Pala	Kochi	mumbai
+10	20	30	25	5	50
+student@T22:~/ajce/rmca$ paste -s -d ":" k.txt l.txt s.txt
+Joseph:J K:kiran:Rocky:Jomy:Rocky bhaii
+Kannur:Kottayam:Pala:Kochi:mumbai
+10:20:30:25:5:50
+student@T22:~/ajce/rmca$ paste ---< k.txt
+paste: unrecognized option '---'
+Try 'paste --help' for more information.
+student@T22:~/ajce/rmca$ paste--<k.txt
+paste--: command not found
+student@T22:~/ajce/rmca$ paste - - < k.txt
+Joseph	J K
+kiran	Rocky
+Jomy	Rocky bhaii
+student@T22:~/ajce/rmca$ paste - - - < k.txt l.txt s.txt
+Joseph	J K	kiran	Kannur	10
+Rocky	Jomy	Rocky bhaii	Kottayam	20
+			Pala	30
+			Kochi	25
+			mumbai	5
+				50
+student@T22:~/ajce/rmca$ man paste
+student@T22:~/ajce/rmca$ 
+

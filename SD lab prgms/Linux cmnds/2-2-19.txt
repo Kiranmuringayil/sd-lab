@@ -1,0 +1,241 @@
+student@T22:~$ ls
+ ajce        Downloads          PycharmProjects  'sem2 q.cpp'     'try catch.o'
+ anju        examples.desktop   rethrow           snap             Videos
+ anjut       Music              rethrow.cpp       Templates
+ Desktop     Pictures           rethrow.o        'try catch'
+ Documents   Public            'sem 1q.cpp'      'try catch.cpp'
+student@T22:~$ cd ajce
+student@T22:~/ajce$ cd MCA
+student@T22:~/ajce/MCA$ cd LMCA
+student@T22:~/ajce/MCA/LMCA$ cd ..
+student@T22:~/ajce/MCA$ ls
+INTMCA  LMCA  out.txt  RMCA
+student@T22:~/ajce/MCA$ cat out.txt
+bin
+boot
+cdrom
+dev
+etc
+home
+initrd.img
+initrd.img.old
+lib
+lib64
+lost+found
+media
+mnt
+opt
+proc
+root
+run
+sbin
+snap
+srv
+sys
+tmp
+usr
+var
+vmlinuz
+vmlinuz.old
+student@T22:~/ajce/MCA$ cat >out.txt
+hello how are you 
+student@T22:~/ajce/MCA$ cat >out.txt
+hai
+student@T22:~/ajce/MCA$ cat out.txt
+hai
+student@T22:~/ajce/MCA$ cat >abc.txt
+hai i am abc 
+student@T22:~/ajce/MCA$ cat *.txt
+hai i am abc 
+hai
+student@T22:~/ajce/MCA$ cat out.txt abc.txt
+hai
+hai i am abc 
+student@T22:~/ajce/MCA$ cat abc.txt> copy.txt
+student@T22:~/ajce/MCA$ cat copy.txt
+hai i am abc 
+student@T22:~/ajce/MCA$ cat >copy.txt
+hello i am a copy
+student@T22:~/ajce/MCA$ cat out.txt abc.txt copy.txt>newtext.txt
+student@T22:~/ajce/MCA$ cat newtext.txt
+hai
+hai i am abc 
+hello i am a copy
+student@T22:~/ajce/MCA$ cat out.txt>>abc.txt
+student@T22:~/ajce/MCA$ cat abc.txt
+hai i am abc 
+hai
+student@T22:~/ajce/MCA$ touch myfile.txt
+student@T22:~/ajce/MCA$ ls
+abc.txt  copy.txt  INTMCA  LMCA  myfile.txt  newtext.txt  out.txt  RMCA
+student@T22:~/ajce/MCA$ cat myfile.txt
+student@T22:~/ajce/MCA$ cat >myfile.txt
+hello i am my file
+student@T22:~/ajce/MCA$ cd RMCA
+student@T22:~/ajce/MCA/RMCA$ ls
+abc.txt  copy.txt  myfile.txt  newtext.txt  out.txt
+student@T22:~/ajce/MCA/RMCA$ cat sample.txt
+cat: sample.txt: No such file or directory
+student@T22:~/ajce/MCA/RMCA$ cat 
+
+
+student@T22:~/ajce/MCA/RMCA$ cat >sample.txt
+hello i am sample.txt
+hello read me
+student@T22:~/ajce/MCA/RMCA$ cat sample.txt
+hello i am sample.txt
+hello read me
+student@T22:~/ajce/MCA/RMCA$ man cat
+student@T22:~/ajce/MCA/RMCA$ cat -n abc.txt
+     1	hai i am abc 
+     2	hai
+student@T22:~/ajce/MCA/RMCA$ man cat
+student@T22:~/ajce/MCA/RMCA$ man cat
+student@T22:~/ajce/MCA/RMCA$ cat -A abc.txt
+hai i am abc $
+hai$
+student@T22:~/ajce/MCA/RMCA$ cat -a abc.txt
+cat: invalid option -- 'a'
+Try 'cat --help' for more information.
+student@T22:~/ajce/MCA/RMCA$ cat out.txt;cat abc.txt;cat newtext.txt;
+hai
+hai i am abc 
+hai
+hai
+hai i am abc 
+hello i am a copy
+student@T22:~/ajce/MCA/RMCA$ cat -s abc.txt
+hai i am abc 
+hai
+student@T22:~/ajce/MCA/RMCA$ cat> one.txt
+1
+
+2
+3
+4
+
+
+
+6
+
+
+
+
+7
+
+
+
+
+
+
+8
+student@T22:~/ajce/MCA/RMCA$ cat -s one.txt
+1
+
+2
+3
+4
+
+6
+
+7
+
+8
+student@T22:~/ajce/MCA/RMCA$ man cat
+student@T22:~/ajce/MCA/RMCA$ tac abc.txt
+hai
+hai i am abc 
+student@T22:~/ajce/MCA/RMCA$ tac one.txt
+8
+
+
+
+
+
+
+7
+
+
+
+
+6
+
+
+
+4
+3
+2
+
+1
+student@T22:~/ajce/MCA/RMCA$ cat -e abc.txt
+hai i am abc $
+hai$
+student@T22:~/ajce/MCA/RMCA$ cat -v abc.txt
+hai i am abc 
+hai
+student@T22:~/ajce/MCA/RMCA$ man cat
+student@T22:~/ajce/MCA/RMCA$ cat -b one.txt
+     1	1
+
+     2	2
+     3	3
+     4	4
+
+
+
+     5	6
+
+
+
+
+     6	7
+
+
+
+
+
+
+     7	8
+student@T22:~/ajce/MCA/RMCA$ man cat
+student@T22:~/ajce/MCA/RMCA$ man mv
+student@T22:~/ajce/MCA/RMCA$ ls
+abc.txt  copy.txt  myfile.txt  newtext.txt  one.txt  out.txt  sample.txt
+student@T22:~/ajce/MCA/RMCA$ mv abc.txt copy.txt
+student@T22:~/ajce/MCA/RMCA$ ls
+copy.txt  myfile.txt  newtext.txt  one.txt  out.txt  sample.txt
+student@T22:~/ajce/MCA/RMCA$ mv copy.txt LMCA
+student@T22:~/ajce/MCA/RMCA$ ls
+LMCA  myfile.txt  newtext.txt  one.txt  out.txt  sample.txt
+student@T22:~/ajce/MCA/RMCA$ mv LMCA /LMCA
+mv: cannot move 'LMCA' to '/LMCA': Permission denied
+student@T22:~/ajce/MCA/RMCA$ cd ..
+student@T22:~/ajce/MCA$ ls
+INTMCA  LMCA  myfile.txt  newtext.txt  one.txt  out.txt  RMCA  sample.txt
+student@T22:~/ajce/MCA$ mv out.txt LMCA
+student@T22:~/ajce/MCA$ ls
+INTMCA  LMCA  myfile.txt  newtext.txt  one.txt  RMCA  sample.txt
+student@T22:~/ajce/MCA$ ls LMCA
+out.txt
+student@T22:~/ajce/MCA$ mv -i out.txt sample.txt
+mv: cannot stat 'out.txt': No such file or directory
+student@T22:~/ajce/MCA$ man mv
+student@T22:~/ajce/MCA$ mv -i one.txt myfile.txt
+mv: overwrite 'myfile.txt'? n
+student@T22:~/ajce/MCA$ man mv
+student@T22:~/ajce/MCA$ 
+student@T22:~/ajce/MCA$ mv -n one.txt myfile.txt
+student@T22:~/ajce/MCA$ ls
+INTMCA  LMCA  myfile.txt  newtext.txt  one.txt  RMCA  sample.txt
+student@T22:~/ajce/MCA$ mv myfile.txt one.txt sample.txt LMCA
+student@T22:~/ajce/MCA$ ls
+INTMCA  LMCA  newtext.txt  RMCA
+student@T22:~/ajce/MCA$ cd LMCA
+student@T22:~/ajce/MCA/LMCA$ ls
+myfile.txt  one.txt  out.txt  sample.txt
+student@T22:~/ajce/MCA/LMCA$ mv *.txt ..
+student@T22:~/ajce/MCA/LMCA$ ls
+student@T22:~/ajce/MCA/LMCA$ cd ..
+student@T22:~/ajce/MCA$ ls
+INTMCA  LMCA  myfile.txt  newtext.txt  one.txt  out.txt  RMCA  sample.txt
+student@T22:~/ajce/MCA$ ^C
+student@T22:~/ajce/MCA$ 

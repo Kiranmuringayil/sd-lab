@@ -1,0 +1,52 @@
+student@S46:~$ javac udpclient.java
+javac: file not found: udpclient.java
+Usage: javac <options> <source files>
+use -help for a list of possible options
+student@S46:~$ cd kiran
+student@S46:~/kiran$ javac udpclient.java
+student@S46:~/kiran$ java udpclient
+hai
+hlo
+bye
+student@S46:~/kiran$ javac echoclient.java
+echoclient.java:3: error: class Client2 is public, should be declared in a file named Client2.java
+public class Client2 
+       ^
+1 error
+student@S46:~/kiran$ javac echoclient.java
+student@S46:~/kiran$ java echoclient
+Exception in thread "main" java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at java.net.Socket.connect(Socket.java:538)
+	at java.net.Socket.<init>(Socket.java:434)
+	at java.net.Socket.<init>(Socket.java:211)
+	at echoclient.main(echoclient.java:7)
+student@S46:~/kiran$ hii
+
+Command 'hii' not found, did you mean:
+
+  command 'hiri' from snap hiri (1.4.0.5)
+  command 'hi' from snap hi (1.1)
+  command 'ii' from deb ii
+
+See 'snap info <snapname>' for additional versions.
+
+student@S46:~/kiran$ javac echoclient.java
+student@S46:~/kiran$ java echoclient
+ Enter text..
+ if client 'quit' type  exit
+tyhtjtuk
+Server said : tyhtjtuk
+Enter text 
+hai
+Server said : hai
+Enter text 
+exit
+Terminated..
+student@S46:~/kiran$ 
+

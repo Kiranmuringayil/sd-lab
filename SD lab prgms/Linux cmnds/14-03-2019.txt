@@ -1,0 +1,111 @@
+student@T22:~$ cd ajce
+student@T22:~/ajce$ ls -a >rmca.txt
+student@T22:~/ajce$ cat mca.txt
+cat: mca.txt: No such file or directory
+student@T22:~/ajce$ cat a.txt
+hellooo
+student@T22:~/ajce$ ls -l < a.txt
+total 36
+-rw-r--r-- 1 student student    8 Feb 11 16:59 a.txt
+-rw-r--r-- 1 student student   16 Feb 14 20:57 b.txt
+-rw-r--r-- 1 student student   29 Feb 16 17:02 f1.txt
+drwxr-xr-x 3 student student 4096 Mar  7 15:48 rmca
+drwxr-xr-x 2 student student 4096 Mar 11 11:57 RMCA
+-rw-r--r-- 1 student student   58 Mar 14 14:39 rmca.txt
+drwxr-xr-x 2 student student 4096 Feb 14 20:00 stud
+drwxr-xr-x 2 student student 4096 Mar 11 12:35 tar
+-rw-r--r-- 1 student student  135 Feb 18 17:14 z.txt
+student@T22:~/ajce$ ls < a.txt
+a.txt  b.txt  f1.txt  rmca  RMCA  rmca.txt  stud  tar  z.txt
+student@T22:~/ajce$ wc -l < a.txt
+1
+student@T22:~/ajce$ wc -l < z.txt
+4
+student@T22:~/ajce$ wc -l < wl.txt
+14
+student@T22:~/ajce$ wc -l wl.txt
+14 wl.txt
+student@T22:~/ajce$ ls -a > wl.txt
+student@T22:~/ajce$ ls -a > a.txt
+student@T22:~/ajce$ ls -a > rmca
+bash: rmca: Is a directory
+student@T22:~/ajce$ ls -a > z.txt
+student@T22:~/ajce$ a.txt 2>errorfile
+student@T22:~/ajce$ a.txt 2>errorfile
+student@T22:~/ajce$ my 2> errorfile.txt
+student@T22:~/ajce$ a.txt 2>error1
+student@T22:~/ajce$ cat error1
+a.txt: command not found
+student@T22:~/ajce$ cat a.txt|head -5 | tail -2
+b.txt
+f1.txt
+student@T22:~/ajce$ cat a.txt|head -5 | tail -5
+.
+..
+a.txt
+b.txt
+f1.txt
+student@T22:~/ajce$ cat b.txt|head -5 | tail -5
+hellooo
+hellooo
+student@T22:~/ajce$ cat > p.txt
+haaaiii
+hellahellaa     
+heheeheeehe
+koooiii
+^C
+student@T22:~/ajce$ ls -l p.txt
+-rw-r--r-- 1 student student 40 Mar 14 15:20 p.txt
+student@T22:~/ajce$ chmod u=rwx,g=rx,o=r p.txt
+student@T22:~/ajce$ cat p.txt
+haaaiii
+hellahellaa
+heheeheeehe
+koooiii
+student@T22:~/ajce$ chmod u=x p.txt
+student@T22:~/ajce$ cat p.txt
+cat: p.txt: Permission denied
+student@T22:~/ajce$ chmod u=r p.txt
+student@T22:~/ajce$ cat p.txt
+haaaiii
+hellahellaa
+heheeheeehe
+koooiii
+student@T22:~/ajce$ chmod 777 p.txt
+student@T22:~/ajce$ cat p.txt
+haaaiii
+hellahellaa
+heheeheeehe
+koooiii
+student@T22:~/ajce$ chmod 411 p.txt
+student@T22:~/ajce$ cat p.txt
+haaaiii
+hellahellaa
+heheeheeehe
+koooiii
+student@T22:~/ajce$ chmod 754 p.txt
+student@T22:~/ajce$ cat p.txt
+haaaiii
+hellahellaa
+heheeheeehe
+koooiii
+student@T22:~/ajce$ chmod 111 p.txt
+student@T22:~/ajce$ cat p.txt
+cat: p.txt: Permission denied
+student@T22:~/ajce$ chmod 777 p.txt
+student@T22:~/ajce$ cat p.txt
+haaaiii
+hellahellaa
+heheeheeehe
+koooiii
+student@T22:~/ajce$ chmod u+6 p.txt
+chmod: invalid mode: ‘u+6’
+Try 'chmod --help' for more information.
+student@T22:~/ajce$ chmod u+rw p.txt
+student@T22:~/ajce$ cat p.txt
+haaaiii
+hellahellaa
+heheeheeehe
+koooiii
+student@T22:~/ajce$ 
+

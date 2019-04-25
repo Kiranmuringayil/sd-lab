@@ -1,0 +1,245 @@
+student@T22:~$ cd ajce
+student@T22:~/ajce$ find . -name a.txt
+./rmca/lmca/a.txt
+./rmca/a.txt
+./a.txt
+./stud/a.txt
+student@T22:~/ajce$ find \ -name "*.txt"
+find: ‘ -name’: No such file or directory
+find: ‘*.txt’: No such file or directory
+student@T22:~/ajce$ find -name a.txt
+./rmca/lmca/a.txt
+./rmca/a.txt
+./a.txt
+./stud/a.txt
+student@T22:~/ajce$ find . -perm 664
+./rmca/wl.txt
+student@T22:~/ajce$ find . -perm 774
+student@T22:~/ajce$ find . -perm 674
+student@T22:~/ajce$ find ./rmca -name q.txt
+./rmca/q.txt
+student@T22:~/ajce$ find . -empty
+./rmca/lmca/vc
+./rmca/lmca/ab
+student@T22:~/ajce$ cd rmca
+student@T22:~/ajce/rmca$ find . -empty
+./lmca/vc
+./lmca/ab
+student@T22:~/ajce/rmca$ cd stud
+bash: cd: stud: No such file or directory
+student@T22:~/ajce/rmca$ cd ..
+student@T22:~/ajce$ cd stud
+student@T22:~/ajce/stud$ find . -empty
+student@T22:~/ajce/stud$ cd..
+cd..: command not found
+student@T22:~/ajce/stud$ cd .
+student@T22:~/ajce/stud$ cd ..
+student@T22:~/ajce$ find ./rmca -name *.txt
+find: paths must precede expression: `b.txt'
+find: possible unquoted pattern after predicate `-name'?
+student@T22:~/ajce$ find ./rmca -name "*.txt"
+./rmca/k.txt
+./rmca/lmca/a.txt
+./rmca/lmca/b.txt
+./rmca/hd.txt
+./rmca/q.txt
+./rmca/a.txt
+./rmca/s.txt
+./rmca/b.txt
+./rmca/wl.txt
+./rmca/l.txt
+./rmca/c.txt
+./rmca/tl.txt
+./rmca/w.txt
+student@T22:~/ajce$ find . -iname rmca
+./rmca
+student@T22:~/ajce$ find . -iname rmca
+./rmca
+./RMCA
+student@T22:~/ajce$ find -type d -name a.txt
+student@T22:~/ajce$ find -type d -name stud
+./stud
+student@T22:~/ajce$ find -type f -name a.txt
+./rmca/lmca/a.txt
+./rmca/a.txt
+./a.txt
+./stud/a.txt
+student@T22:~/ajce$ find . -perm 777
+student@T22:~/ajce$ find ~ -perm 777
+/home/student/oddeven.sh
+/home/student/fib.sh
+/home/student/number.sh
+/home/student/snap/vlc/common/.cache/gio-modules/libgiolibproxy.so
+/home/student/snap/vlc/common/.cache/gio-modules/libdconfsettings.so
+/home/student/snap/vlc/common/.cache/gio-modules/libgiognutls.so
+/home/student/snap/vlc/common/.cache/gio-modules/libgiognomeproxy.so
+/home/student/snap/vlc/current
+/home/student/snap/vlc/770/.themes
+/home/student/snap/vlc/770/.config/gtk-2.0/gtkfilechooser.ini
+/home/student/snap/vlc/770/.config/dconf/user
+/home/student/snap/vlc/770/.config/ibus/bus
+/home/student/snap/vlc/770/.config/gtk-3.0/bookmarks
+/home/student/snap/vlc/770/.config/gtk-3.0/settings.ini
+/home/student/snap/vlc/770/.local/share/glib-2.0/schemas/org.gnome.desktop.wm.keybindings.gschema.xml
+/home/student/snap/vlc/770/.local/share/glib-2.0/schemas/org.gnome.desktop.thumbnail-cache.gschema.xml
+/home/student/snap/vlc/770/.local/share/glib-2.0/schemas/org.gnome.desktop.a11y.applications.gschema.xml
+/home/student/snap/vlc/770/.local/share/glib-2.0/schemas/org.gnome.system.location.gschema.xml
+/home/student/snap/vlc/770/.local/share/glib-2.0/schemas/org.gnome.desktop.lockdown.gschema.xml
+/home/student/snap/vlc/770/.local/share/glib-2.0/schemas/org.gnome.desktop.notifications.gschema.xml
+/home/student/snap/vlc/770/.local/share/glib-2.0/schemas/org.gnome.desktop.session.gschema.xml
+/home/student/snap/vlc/770/.local/share/glib-2.0/schemas/org.gnome.desktop.default-applications.gschema.xml
+/home/student/snap/vlc/770/.local/share/glib-2.0/schemas/org.gnome.desktop.app-folders.gschema.xml
+/home/student/snap/vlc/770/.local/share/glib-2.0/schemas/org.gnome.desktop.enums.xml
+/home/student/snap/vlc/770/.local/share/glib-2.0/schemas/org.gnome.desktop.datetime.gschema.xml
+/home/student/snap/vlc/770/.local/share/glib-2.0/schemas/org.gnome.desktop.media-handling.gschema.xml
+/home/student/snap/vlc/770/.local/share/glib-2.0/schemas/10_gsettings-desktop-schemas.gschema.override
+/home/student/snap/vlc/770/.local/share/glib-2.0/schemas/org.gnome.desktop.a11y.gschema.xml
+/home/student/snap/vlc/770/.local/share/glib-2.0/schemas/org.gnome.desktop.screensaver.gschema.xml
+/home/student/snap/vlc/770/.local/share/glib-2.0/schemas/org.gnome.desktop.search-providers.gschema.xml
+/home/student/snap/vlc/770/.local/share/glib-2.0/schemas/org.gtk.Settings.ColorChooser.gschema.xml
+/home/student/snap/vlc/770/.local/share/glib-2.0/schemas/org.gnome.system.locale.gschema.xml
+/home/student/snap/vlc/770/.local/share/glib-2.0/schemas/org.gnome.desktop.interface.gschema.xml
+/home/student/snap/vlc/770/.local/share/glib-2.0/schemas/org.gnome.desktop.input-sources.gschema.xml
+/home/student/snap/vlc/770/.local/share/glib-2.0/schemas/org.gnome.desktop.a11y.mouse.gschema.xml
+/home/student/snap/vlc/770/.local/share/glib-2.0/schemas/org.gtk.Settings.FileChooser.gschema.xml
+/home/student/snap/vlc/770/.local/share/glib-2.0/schemas/org.gnome.system.proxy.gschema.xml
+/home/student/snap/vlc/770/.local/share/glib-2.0/schemas/org.gnome.desktop.thumbnailers.gschema.xml
+/home/student/snap/vlc/770/.local/share/glib-2.0/schemas/org.gnome.desktop.wm.preferences.gschema.xml
+/home/student/snap/vlc/770/.local/share/glib-2.0/schemas/org.gnome.desktop.privacy.gschema.xml
+/home/student/snap/vlc/770/.local/share/glib-2.0/schemas/org.gnome.desktop.a11y.keyboard.gschema.xml
+/home/student/snap/vlc/770/.local/share/glib-2.0/schemas/10_libgtk-3-common.gschema.override
+/home/student/snap/vlc/770/.local/share/glib-2.0/schemas/org.gnome.desktop.a11y.magnifier.gschema.xml
+/home/student/snap/vlc/770/.local/share/glib-2.0/schemas/org.gnome.desktop.peripherals.gschema.xml
+/home/student/snap/vlc/770/.local/share/glib-2.0/schemas/org.gnome.desktop.background.gschema.xml
+/home/student/snap/vlc/770/.local/share/glib-2.0/schemas/org.gnome.desktop.sound.gschema.xml
+/home/student/snap/vlc/770/.local/share/themes
+/home/student/snap/vlc/770/.local/share/icons/Humanity-Dark/COPYING
+/home/student/snap/vlc/770/.local/share/icons/Humanity-Dark/actions@2
+/home/student/snap/vlc/770/.local/share/icons/Humanity-Dark/actions
+/home/student/snap/vlc/770/.local/share/icons/Humanity-Dark/AUTHORS
+/home/student/snap/vlc/770/.local/share/icons/Humanity-Dark/places
+/home/student/snap/vlc/770/.local/share/icons/Humanity-Dark/places@2
+/home/student/snap/vlc/770/.local/share/icons/Humanity-Dark/index.theme
+/home/student/snap/vlc/770/.local/share/icons/Humanity-Dark/devices
+/home/student/snap/vlc/770/.local/share/icons/Humanity-Dark/apps
+/home/student/snap/vlc/770/.local/share/icons/Humanity-Dark/devices@2
+/home/student/snap/vlc/770/.local/share/icons/Humanity-Dark/status@2
+/home/student/snap/vlc/770/.local/share/icons/Humanity-Dark/status
+/home/student/snap/vlc/770/.local/share/icons/Humanity-Dark/apps@2
+/home/student/snap/vlc/770/.local/share/icons/Humanity/COPYING
+/home/student/snap/vlc/770/.local/share/icons/Humanity/actions@2
+/home/student/snap/vlc/770/.local/share/icons/Humanity/mimes
+/home/student/snap/vlc/770/.local/share/icons/Humanity/actions
+/home/student/snap/vlc/770/.local/share/icons/Humanity/AUTHORS
+/home/student/snap/vlc/770/.local/share/icons/Humanity/mimes@2
+/home/student/snap/vlc/770/.local/share/icons/Humanity/places
+/home/student/snap/vlc/770/.local/share/icons/Humanity/places@2
+/home/student/snap/vlc/770/.local/share/icons/Humanity/index.theme
+/home/student/snap/vlc/770/.local/share/icons/Humanity/CONTRIBUTORS
+/home/student/snap/vlc/770/.local/share/icons/Humanity/stock@2
+/home/student/snap/vlc/770/.local/share/icons/Humanity/devices
+/home/student/snap/vlc/770/.local/share/icons/Humanity/emblems
+/home/student/snap/vlc/770/.local/share/icons/Humanity/apps
+/home/student/snap/vlc/770/.local/share/icons/Humanity/emblems@2
+/home/student/snap/vlc/770/.local/share/icons/Humanity/categories@2
+/home/student/snap/vlc/770/.local/share/icons/Humanity/devices@2
+/home/student/snap/vlc/770/.local/share/icons/Humanity/status@2
+/home/student/snap/vlc/770/.local/share/icons/Humanity/categories
+/home/student/snap/vlc/770/.local/share/icons/Humanity/stock
+/home/student/snap/vlc/770/.local/share/icons/Humanity/animations@2
+/home/student/snap/vlc/770/.local/share/icons/Humanity/animations
+/home/student/snap/vlc/770/.local/share/icons/Humanity/status
+/home/student/snap/vlc/770/.local/share/icons/Humanity/apps@2
+/home/student/snap/vlc/770/.local/share/icons/ubuntu-mono-light/mimes
+/home/student/snap/vlc/770/.local/share/icons/ubuntu-mono-light/actions
+/home/student/snap/vlc/770/.local/share/icons/ubuntu-mono-light/places
+/home/student/snap/vlc/770/.local/share/icons/ubuntu-mono-light/index.theme
+/home/student/snap/vlc/770/.local/share/icons/ubuntu-mono-light/apps
+/home/student/snap/vlc/770/.local/share/icons/ubuntu-mono-light/categories
+/home/student/snap/vlc/770/.local/share/icons/ubuntu-mono-light/stock
+/home/student/snap/vlc/770/.local/share/icons/ubuntu-mono-light/animations
+/home/student/snap/vlc/770/.local/share/icons/ubuntu-mono-light/status
+/home/student/snap/vlc/770/.local/share/icons/breeze-dark/actions
+/home/student/snap/vlc/770/.local/share/icons/breeze-dark/places
+/home/student/snap/vlc/770/.local/share/icons/breeze-dark/mimetypes
+/home/student/snap/vlc/770/.local/share/icons/breeze-dark/index.theme
+/home/student/snap/vlc/770/.local/share/icons/breeze-dark/devices
+/home/student/snap/vlc/770/.local/share/icons/breeze-dark/applets
+/home/student/snap/vlc/770/.local/share/icons/breeze-dark/emblems
+/home/student/snap/vlc/770/.local/share/icons/breeze-dark/apps
+/home/student/snap/vlc/770/.local/share/icons/breeze-dark/categories
+/home/student/snap/vlc/770/.local/share/icons/breeze-dark/emotes
+/home/student/snap/vlc/770/.local/share/icons/breeze-dark/animations
+/home/student/snap/vlc/770/.local/share/icons/breeze-dark/preferences
+/home/student/snap/vlc/770/.local/share/icons/breeze-dark/status
+/home/student/snap/vlc/770/.local/share/icons/LoginIcons/index.theme
+/home/student/snap/vlc/770/.local/share/icons/LoginIcons/apps
+/home/student/snap/vlc/770/.local/share/icons/DMZ-Black/index.theme
+/home/student/snap/vlc/770/.local/share/icons/DMZ-Black/cursors
+/home/student/snap/vlc/770/.local/share/icons/DMZ-Black/cursor.theme
+/home/student/snap/vlc/770/.local/share/icons/DMZ-White/index.theme
+/home/student/snap/vlc/770/.local/share/icons/DMZ-White/cursors
+/home/student/snap/vlc/770/.local/share/icons/DMZ-White/cursor.theme
+/home/student/snap/vlc/770/.local/share/icons/breeze/actions
+/home/student/snap/vlc/770/.local/share/icons/breeze/places
+/home/student/snap/vlc/770/.local/share/icons/breeze/mimetypes
+/home/student/snap/vlc/770/.local/share/icons/breeze/index.theme
+/home/student/snap/vlc/770/.local/share/icons/breeze/devices
+/home/student/snap/vlc/770/.local/share/icons/breeze/applets
+/home/student/snap/vlc/770/.local/share/icons/breeze/emblems
+/home/student/snap/vlc/770/.local/share/icons/breeze/apps
+/home/student/snap/vlc/770/.local/share/icons/breeze/categories
+/home/student/snap/vlc/770/.local/share/icons/breeze/emotes
+/home/student/snap/vlc/770/.local/share/icons/breeze/animations
+/home/student/snap/vlc/770/.local/share/icons/breeze/preferences
+/home/student/snap/vlc/770/.local/share/icons/breeze/status
+/home/student/snap/vlc/770/.local/share/icons/hicolor/512x512
+/home/student/snap/vlc/770/.local/share/icons/hicolor/128x128
+/home/student/snap/vlc/770/.local/share/icons/hicolor/192x192
+/home/student/snap/vlc/770/.local/share/icons/hicolor/scalable
+/home/student/snap/vlc/770/.local/share/icons/hicolor/index.theme
+/home/student/snap/vlc/770/.local/share/icons/hicolor/72x72
+/home/student/snap/vlc/770/.local/share/icons/hicolor/16x16
+/home/student/snap/vlc/770/.local/share/icons/hicolor/256x256
+/home/student/snap/vlc/770/.local/share/icons/hicolor/48x48
+/home/student/snap/vlc/770/.local/share/icons/hicolor/96x96
+/home/student/snap/vlc/770/.local/share/icons/hicolor/22x22
+/home/student/snap/vlc/770/.local/share/icons/hicolor/24x24
+/home/student/snap/vlc/770/.local/share/icons/hicolor/64x64
+/home/student/snap/vlc/770/.local/share/icons/hicolor/symbolic
+/home/student/snap/vlc/770/.local/share/icons/hicolor/36x36
+/home/student/snap/vlc/770/.local/share/icons/hicolor/32x32
+/home/student/snap/vlc/770/.local/share/icons/ubuntu-mono-dark/mimes
+/home/student/snap/vlc/770/.local/share/icons/ubuntu-mono-dark/actions
+/home/student/snap/vlc/770/.local/share/icons/ubuntu-mono-dark/places
+/home/student/snap/vlc/770/.local/share/icons/ubuntu-mono-dark/index.theme
+/home/student/snap/vlc/770/.local/share/icons/ubuntu-mono-dark/apps
+/home/student/snap/vlc/770/.local/share/icons/ubuntu-mono-dark/categories
+/home/student/snap/vlc/770/.local/share/icons/ubuntu-mono-dark/stock
+/home/student/snap/vlc/770/.local/share/icons/ubuntu-mono-dark/animations
+/home/student/snap/vlc/770/.local/share/icons/ubuntu-mono-dark/status
+/home/student/.mozilla/firefox/b4kvqpyw.default/lock
+/home/student/prime.sh
+student@T22:~/ajce$ find . -empty
+./rmca/lmca/vc
+./rmca/lmca/ab
+./RMCA
+student@T22:~/ajce$ find /rmca -empty
+find: ‘/rmca’: No such file or directory
+student@T22:~/ajce$ tar -czvf file.tar.gz *.txt
+a.txt
+b.txt
+f1.txt
+z.txt
+student@T22:~/ajce$ cd tar
+student@T22:~/ajce/tar$ ls
+file.tar.gz
+student@T22:~/ajce/tar$ tar -xzvf file.tar.gz
+a.txt
+b.txt
+f1.txt
+z.txt
+student@T22:~/ajce/tar$ ls
+a.txt  b.txt  f1.txt  file.tar.gz  z.txt
+student@T22:~/ajce/tar$ 
+

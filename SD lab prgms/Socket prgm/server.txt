@@ -1,0 +1,64 @@
+student@S46:~$ mkdir kiran
+student@S46:~$ cd kiran
+student@S46:~/kiran$ gedit udpclient.java
+student@S46:~/kiran$ chmod +x udpclient.java
+student@S46:~/kiran$ ./udpclient.java
+^C
+
+ 
+
+^[^C^C./udpclient.java: line 6: public: command not found
+./udpclient.java: line 8: syntax error near unexpected token `('
+./udpclient.java: line 8: `	public static void main(String args[]) throws IOException '
+student@S46:~/kiran$ gedit udpserver.java
+student@S46:~/kiran$ chmod +x udpserver.java
+student@S46:~/kiran$ ./udpserver.java
+./udpserver.java: line 1: //: Is a directory
+./udpserver.java: line 2: //: Is a directory
+^C^C
+^C^C
+^C./udpserver.java: line 8: public: command not found
+./udpserver.java: line 10: syntax error near unexpected token `('
+./udpserver.java: line 10: `	public static void main(String[] args) throws IOException '
+student@S46:~/kiran$ gedit udpserver.java
+student@S46:~/kiran$ javac udpserver.java
+student@S46:~/kiran$ java udpserver
+hai
+Client:-hai
+hlo
+Client:-hlo
+Client:-bye
+Client sent bye.....EXITING
+student@S46:~/kiran$ hai
+
+Command 'hai' not found, did you mean:
+
+  command 'hi' from snap hi (1.1)
+  command 'fai' from deb fai-client
+  command 'cai' from deb emboss
+  command 'ohai' from deb ohai
+
+See 'snap info <snapname>' for additional versions.
+
+student@S46:~/kiran$ hlo
+
+Command 'hlo' not found, did you mean:
+
+  command 'hls' from deb hfsutils
+  command 'h2o' from deb h2o
+
+Try: apt install <deb name>
+
+student@S46:~/kiran$ gedit echoserver.java
+student@S46:~/kiran$ gedit echoclient.java
+student@S46:~/kiran$ gedit echoserver.java
+student@S46:~/kiran$ gedit echoclient.java
+student@S46:~/kiran$ javac echoserver.java
+student@S46:~/kiran$ java echoserver
+Server is running...
+connection establised
+server send echo to client 
+server send echo to client 
+Terminated..
+student@S46:~/kiran$ 
+

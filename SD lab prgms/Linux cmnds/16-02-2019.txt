@@ -1,0 +1,111 @@
+student@T22:~$ cd ajce
+student@T22:~/ajce$ cat f1.txt
+cat: f1.txt: No such file or directory
+student@T22:~/ajce$ touch f1.txt
+student@T22:~/ajce$ cat > f1.txt
+1
+5
+9
+10
+15
+30
+35
+25
+asd
+fgh
+^C
+student@T22:~/ajce$ wc f1.txt
+10 10 29 f1.txt
+student@T22:~/ajce$ wc -l f1.txt
+10 f1.txt
+student@T22:~/ajce$ wc -c f1.txt
+29 f1.txt
+student@T22:~/ajce$ wc -m f1.txt
+29 f1.txt
+student@T22:~/ajce$ cd rmca
+student@T22:~/ajce/rmca$ cd ..
+student@T22:~/ajce$ wc -L f1.txt
+3 f1.txt
+student@T22:~/ajce$ wc -w f1.txt
+10 f1.txt
+student@T22:~/ajce$ wc f1.txt
+10 10 29 f1.txt
+student@T22:~/ajce$ cd rmca
+student@T22:~/ajce/rmca$ touch f2.txt
+student@T22:~/ajce/rmca$ cat > f2.txt
+abc
+123 45 qwe kl 10 15 
+^C
+student@T22:~/ajce/rmca$ wc f2.txt
+ 2  7 25 f2.txt
+student@T22:~/ajce/rmca$ wc -l f2.txt
+2 f2.txt
+student@T22:~/ajce/rmca$ wc -w f2.txt
+7 f2.txt
+student@T22:~/ajce/rmca$ wc -W f2.txt
+wc: invalid option -- 'W'
+Try 'wc --help' for more information.
+student@T22:~/ajce/rmca$ wc -m f2.txt
+25 f2.txt
+student@T22:~/ajce/rmca$ rm f2.txt
+student@T22:~/ajce/rmca$ ls
+a.txt  b.txt  c.txt  lmca
+student@T22:~/ajce/rmca$ touch f.txt
+student@T22:~/ajce/rmca$ cat > f.txt
+hai how r u ...have a nice day...happy bday.^C
+student@T22:~/ajce/rmca$ wc f.txt
+0 0 0 f.txt
+student@T22:~/ajce/rmca$ wc -l f.txt
+0 f.txt
+student@T22:~/ajce/rmca$ wc -c f.txt
+0 f.txt
+student@T22:~/ajce/rmca$ cut -c2 f.txt
+student@T22:~/ajce/rmca$ cut -c1 f.txt
+student@T22:~/ajce/rmca$ touch q.txt
+student@T22:~/ajce/rmca$ cat > q.txt
+hai how are you
+^C
+student@T22:~/ajce/rmca$ cut -c2 q.txt
+a
+student@T22:~/ajce/rmca$ cut -c 3,4,5 q.txt
+i h
+student@T22:~/ajce/rmca$ cut -b q.txt
+cut: invalid byte/character position ‘q.txt’
+Try 'cut --help' for more information.
+student@T22:~/ajce/rmca$ cut -f6 q.txt
+hai how are you
+student@T22:~/ajce/rmca$ cut -b6 q.txt
+o
+student@T22:~/ajce/rmca$ cut -f2 q.txt
+hai how are you
+new year
+
+student@T22:~/ajce/rmca$ cut -c2 f2.txt
+cut: f2.txt: No such file or directory
+student@T22:~/ajce/rmca$ cut -c5 f2.txt
+cut: f2.txt: No such file or directory
+student@T22:~/ajce/rmca$ cut -c8 f2.txt
+cut: f2.txt: No such file or directory
+student@T22:~/ajce/rmca$ cat > w.txt
+1	jk      mca
+2	jomy	mca
+3	kiran	mca
+^C
+student@T22:~/ajce/rmca$ cut -f1 w.txt
+1
+2
+3
+student@T22:~/ajce/rmca$ cut -f2 w.txt
+jk
+jomy
+kiran
+student@T22:~/ajce/rmca$ cut -f3 w.txt
+mca
+mca
+mca
+student@T22:~/ajce/rmca$ cut -f 1,2,3 w.txt
+1	jk	mca
+2	jomy	mca
+3	kiran	mca
+student@T22:~/ajce/rmca$ 
+

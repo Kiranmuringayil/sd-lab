@@ -1,0 +1,81 @@
+student@T22:~$ cd sd
+student@T22:~/sd$ gedit pg10.sh
+student@T22:~/sd$ chmod +x pg10.sh
+student@T22:~/sd$ ./pg10.sh
+Enter a number:10
+./pg10.sh: line 3: [: missing `]'
+./pg10.sh: line 6: [: missing `]'
+positive
+student@T22:~/sd$ ./pg10.sh
+Enter a number:5
+./pg10.sh: line 3: [: missing `]'
+./pg10.sh: line 6: [: missing `]'
+positive
+student@T22:~/sd$ ./pg10.sh
+Enter a number:856
+positive
+student@T22:~/sd$ ./pg10.sh
+Enter a number:0
+zero
+student@T22:~/sd$ ./pg10.sh
+Enter a number:-5
+negative
+student@T22:~/sd$ gedit pg11.sh
+student@T22:~/sd$ chmod +x pg11.sh
+student@T22:~/sd$ ./pg11.sh
+./pg11.sh: line 5: syntax error near unexpected token `then'
+./pg11.sh: line 5: `   then'
+student@T22:~/sd$ gedit pg11.sh
+student@T22:~/sd$ ./pg11.sh monday
+./pg11.sh: line 5: syntax error near unexpected token `then'
+./pg11.sh: line 5: `   then'
+student@T22:~/sd$ gedit pg11.sh
+student@T22:~/sd$ ./pg11.sh monday
+Typed argument is neither Monday nor Tuesday
+student@T22:~/sd$ gedit pg11.sh
+student@T22:~/sd$ ./pg11.sh Monday
+The typed argument is Monday.
+student@T22:~/sd$ ./pg11.sh tuesday
+Typed argument is neither Monday nor Tuesday
+student@T22:~/sd$ ./pg11.sh Tuesday
+Typed argument is Tuesday
+student@T22:~/sd$ gedit pg12.sh
+student@T22:~/sd$ ./pg12.sh
+bash: ./pg12.sh: Permission denied
+student@T22:~/sd$ gedit pg12.sh
+^C
+student@T22:~/sd$ chmod +x pg12.sh
+student@T22:~/sd$ ./pg12.sh
+3 times 5 is 15
+2 times 5 is 10
+5 times 5 is 25
+7 times 5 is 35
+student@T22:~/sd$ gedit pg13.sh
+student@T22:~/sd$ chmod +x pg13.sh
+student@T22:~/sd$ ./pg13.sh
+Welcome 1 times
+Welcome 2 times
+Welcome 3 times
+Welcome 4 times
+Welcome 5 times
+student@T22:~/sd$ gedit pg14.sh
+student@T22:~/sd$ chmod +x pg14.sh
+student@T22:~/sd$ ./pg14.sh
+Welcome 0 times
+Welcome 2 times
+Welcome 4 times
+Welcome 6 times
+Welcome 8 times
+Welcome 10 times
+student@T22:~/sd$ gedit pg15.sh
+student@T22:~/sd$ chmod +x pg15.sh
+student@T22:~/sd$ ./pg15.sh
+Welcome 1 times
+Welcome 2 times
+Welcome 3 times
+Welcome 4 times
+Welcome 5 times
+student@T22:~/sd$ gedit pg16.sh
+^C
+student@T22:~/sd$ 
+

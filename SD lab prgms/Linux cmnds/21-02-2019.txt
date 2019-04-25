@@ -1,0 +1,220 @@
+student@T22:~$ cd ajce
+student@T22:~/ajce$ more wl.txt
+more: stat of wl.txt failed: No such file or directory
+student@T22:~/ajce$ cd rmca
+student@T22:~/ajce/rmca$ more wl.txt
+Wonderla Holidays, is one of the largest amusement park operators in India, head
+quartered near Bidadi, 28 kilometres (17 mi) from Bengaluru, Karnataka. Wonderla
+ Holidays Limited currently operates 3 amusement parks in Kochi, Bengaluru and H
+yderabad, and 1 resort in Bengaluru.[1] It is promoted by Kochouseph Chittilappi
+lly and his son Arun Chittilappilly as a subsidiary of V-Guard Industries. The f
+irst amusement park, Wonderla Kochi, was set up in 2000. The third amusement par
+k project Wonderla Hyderabad was commissioned in April 2016.[2] Wonderla holiday
+s is currently planning to open its 4th amusement park in Chennai, expected to b
+e operational by the end of 2018. Wonderla amusement parks offers a variety of r
+ides for all ages to enjoy, some of their rides are Recoil, Maverick, Y-Scream, 
+and their latest addition Mission interstellar. [3]
+In the year 2000, Kochouseph Chittilappilly started the flagship amusement water
+ themed park under the name Veegaland in Kochi, Kerala.[4][5] 75-crore INR was i
+nvested in the constructions and development of veegaland. In 2005 due to overwh
+elming success of the Veegaland project, Kochouseph Chittilappilly decided to bu
+ild another amusement park on a larger scale at a cost of 105 crore INR in Benga
+luru and named it Wonderla. It is spread over an area of 82 acres (33 ha).[4] In
+ order to establish Wonderla as a brand, Veegaland was renamed as Wonderla Kochi
+ in 2011.[6] The third amusement park, Wonderla Hyderabad was commissioned in Ap
+ril 2016.[7]
+The Kochi park was started in 2000 as Veegaland until it was re-branded in 2011.
+[6][8] This park is situated on the top of a hill at Pallikkara, 12 kilometres (
+7.5 mi) from the city center. The park was set up in 2000 and was designed by ar
+student@T22:~/ajce/rmca$ more -d wl.txt
+Wonderla Holidays, is one of the largest amusement park operators in India, head
+quartered near Bidadi, 28 kilometres (17 mi) from Bengaluru, Karnataka. Wonderla
+ Holidays Limited currently operates 3 amusement parks in Kochi, Bengaluru and H
+yderabad, and 1 resort in Bengaluru.[1] It is promoted by Kochouseph Chittilappi
+lly and his son Arun Chittilappilly as a subsidiary of V-Guard Industries. The f
+irst amusement park, Wonderla Kochi, was set up in 2000. The third amusement par
+k project Wonderla Hyderabad was commissioned in April 2016.[2] Wonderla holiday
+s is currently planning to open its 4th amusement park in Chennai, expected to b
+e operational by the end of 2018. Wonderla amusement parks offers a variety of r
+ides for all ages to enjoy, some of their rides are Recoil, Maverick, Y-Scream, 
+and their latest addition Mission interstellar. [3]
+In the year 2000, Kochouseph Chittilappilly started the flagship amusement water
+ themed park under the name Veegaland in Kochi, Kerala.[4][5] 75-crore INR was i
+nvested in the constructions and development of veegaland. In 2005 due to overwh
+elming success of the Veegaland project, Kochouseph Chittilappilly decided to bu
+ild another amusement park on a larger scale at a cost of 105 crore INR in Benga
+luru and named it Wonderla. It is spread over an area of 82 acres (33 ha).[4] In
+ order to establish Wonderla as a brand, Veegaland was renamed as Wonderla Kochi
+ in 2011.[6] The third amusement park, Wonderla Hyderabad was commissioned in Ap
+ril 2016.[7]
+The Kochi park was started in 2000 as Veegaland until it was re-branded in 2011.
+[6][8] This park is situated on the top of a hill at Pallikkara, 12 kilometres (
+7.5 mi) from the city center. The park was set up in 2000 and was designed by ar
+student@T22:~/ajce/rmca$ more -10 wl.txt
+Wonderla Holidays, is one of the largest amusement park operators in India, head
+quartered near Bidadi, 28 kilometres (17 mi) from Bengaluru, Karnataka. Wonderla
+ Holidays Limited currently operates 3 amusement parks in Kochi, Bengaluru and H
+yderabad, and 1 resort in Bengaluru.[1] It is promoted by Kochouseph Chittilappi
+lly and his son Arun Chittilappilly as a subsidiary of V-Guard Industries. The f
+irst amusement park, Wonderla Kochi, was set up in 2000. The third amusement par
+k project Wonderla Hyderabad was commissioned in April 2016.[2] Wonderla holiday
+s is currently planning to open its 4th amusement park in Chennai, expected to b
+e operational by the end of 2018. Wonderla amusement parks offers a variety of r
+ides for all ages to enjoy, some of their rides are Recoil, Maverick, Y-Scream, 
+student@T22:~/ajce/rmca$ more +10 wl.txt
+
+student@T22:~/ajce/rmca$ more +5 wl.txt
+Wonderla Kochi is the first park in India to get ISO 14001 certificate for eco-f
+riendliness and OHSAS 18001 certificate for safety.[10] The park is spread over 
+30 acres of landscaped space with more than 50 amusement rides.[10] In July 2018
+, Wonderla Kochi was ranked eleventh in the TripAdvisor 'Travellers' choice awar
+ds for amusement parks and water parks in Asia.[11] 
+The park features a wide variety of attractions including 55 land and water ride
+s, a musical fountain and laser shows, and a virtual reality show.[12] Wonderla 
+Bangalore has a full-fledged dance floor with a twist, electronically controlled
+ rain showers. Wonderla also has attractions specially designed for children, an
+d these are gentle yet unusual like a kiddies free fall ride. It uses solar-heat
+ed water for all its pools during winter. It has conference facilities for up to
+ 1,000 persons and features five restaurants with a total seating capacity of 1,
+150. It has locker rooms with over 2,350 lockers and restrooms and showers.[12] 
+Wonderla Bangalore has been ranked 1st in India and 7th best in Asia by Tripadvi
+sor for 2014, the highest for any Amusement park in India.[13]
+
+Wonderla Holidays opened its first luxury resort, an 84-room hotel complex sprea
+d over 100,000 square feet and operational since 2012.[14] The resort features i
+ncludes a dedicated children's play area, other recreational and conferencing fa
+cilities.[7] The resort is located next to Wonderla Bangalore.[15] 
+Wonderla Hyderabad offers 25 land based rides and 18 water based attractions on 
+50 acres of land.[16] Wonderla Amusement Park is located 28 km away from Hyderab
+ad City. 
+student@T22:~/ajce/rmca$ more +/ranked wl.txt
+
+...skipping
+The Kochi park was started in 2000 as Veegaland until it was re-branded in 2011.
+[6][8] This park is situated on the top of a hill at Pallikkara, 12 kilometres (
+7.5 mi) from the city center. The park was set up in 2000 and was designed by ar
+chitect Joseph John.[9]
+
+Wonderla Kochi is the first park in India to get ISO 14001 certificate for eco-f
+riendliness and OHSAS 18001 certificate for safety.[10] The park is spread over 
+30 acres of landscaped space with more than 50 amusement rides.[10] In July 2018
+, Wonderla Kochi was ranked eleventh in the TripAdvisor 'Travellers' choice awar
+ds for amusement parks and water parks in Asia.[11] 
+The park features a wide variety of attractions including 55 land and water ride
+s, a musical fountain and laser shows, and a virtual reality show.[12] Wonderla 
+Bangalore has a full-fledged dance floor with a twist, electronically controlled
+ rain showers. Wonderla also has attractions specially designed for children, an
+d these are gentle yet unusual like a kiddies free fall ride. It uses solar-heat
+ed water for all its pools during winter. It has conference facilities for up to
+ 1,000 persons and features five restaurants with a total seating capacity of 1,
+150. It has locker rooms with over 2,350 lockers and restrooms and showers.[12] 
+Wonderla Bangalore has been ranked 1st in India and 7th best in Asia by Tripadvi
+sor for 2014, the highest for any Amusement park in India.[13]
+
+Wonderla Holidays opened its first luxury resort, an 84-room hotel complex sprea
+d over 100,000 square feet and operational since 2012.[14] The resort features i
+student@T22:~/ajce/rmca$ more +/ranked wl.txt
+
+...skipping
+The Kochi park was started in 2000 as Veegaland until it was re-branded in 2011.
+[6][8] This park is situated on the top of a hill at Pallikkara, 12 kilometres (
+7.5 mi) from the city center. The park was set up in 2000 and was designed by ar
+chitect Joseph John.[9]
+
+Wonderla Kochi is the first park in India to get ISO 14001 certificate for eco-f
+riendliness and OHSAS 18001 certificate for safety.[10] The park is spread over 
+30 acres of landscaped space with more than 50 amusement rides.[10] In July 2018
+, Wonderla Kochi was ranked eleventh in the TripAdvisor 'Travellers' choice awar
+ds for amusement parks and water parks in Asia.[11] 
+The park features a wide variety of attractions including 55 land and water ride
+s, a musical fountain and laser shows, and a virtual reality show.[12] Wonderla 
+Bangalore has a full-fledged dance floor with a twist, electronically controlled
+ rain showers. Wonderla also has attractions specially designed for children, an
+d these are gentle yet unusual like a kiddies free fall ride. It uses solar-heat
+ed water for all its pools during winter. It has conference facilities for up to
+ 1,000 persons and features five restaurants with a total seating capacity of 1,
+150. It has locker rooms with over 2,350 lockers and restrooms and showers.[12] 
+Wonderla Bangalore has been ranked 1st in India and 7th best in Asia by Tripadvi
+sor for 2014, the highest for any Amusement park in India.[13]
+
+Wonderla Holidays opened its first luxury resort, an 84-room hotel complex sprea
+d over 100,000 square feet and operational since 2012.[14] The resort features i
+student@T22:~/ajce/rmca$ more -f wl.txt
+Wonderla Holidays, is one of the largest amusement park operators in India, headquartered near Bidadi, 28 kilometres (17 mi) from Bengaluru, Karnataka. Wonderla Holidays Limited currently operates 3 amusement parks in Kochi, Bengaluru and Hyderabad, and 1 resort in Bengaluru.[1] It is promoted by Kochouseph Chitti
+lappilly and his son Arun Chittilappilly as a subsidiary of V-Guard Industries. The first amusement park, Wonderla Kochi, was set up in 2000. The third amusement park project Wonderla Hyderabad was commissioned in April 2016.[2] Wonderla holidays is currently planning to open its 4th amusement park in Chennai, exp
+ected to be operational by the end of 2018. Wonderla amusement parks offers a variety of rides for all ages to enjoy, some of their rides are Recoil, Maverick, Y-Scream, and their latest addition Mission interstellar. [3]
+In the year 2000, Kochouseph Chittilappilly started the flagship amusement water themed park under the name Veegaland in Kochi, Kerala.[4][5] 75-crore INR was invested in the constructions and development of veegaland. In 2005 due to overwhelming success of the Veegaland project, Kochouseph Chittilappilly decided 
+to build another amusement park on a larger scale at a cost of 105 crore INR in Bengaluru and named it Wonderla. It is spread over an area of 82 acres (33 ha).[4] In order to establish Wonderla as a brand, Veegaland was renamed as Wonderla Kochi in 2011.[6] The third amusement park, Wonderla Hyderabad was commissi
+oned in April 2016.[7]
+The Kochi park was started in 2000 as Veegaland until it was re-branded in 2011.[6][8] This park is situated on the top of a hill at Pallikkara, 12 kilometres (7.5 mi) from the city center. The park was set up in 2000 and was designed by architect Joseph John.[9]
+
+Wonderla Kochi is the first park in India to get ISO 14001 certificate for eco-friendliness and OHSAS 18001 certificate for safety.[10] The park is spread over 30 acres of landscaped space with more than 50 amusement rides.[10] In July 2018, Wonderla Kochi was ranked eleventh in the TripAdvisor 'Travellers' choice
+ awards for amusement parks and water parks in Asia.[11] 
+The park features a wide variety of attractions including 55 land and water rides, a musical fountain and laser shows, and a virtual reality show.[12] Wonderla Bangalore has a full-fledged dance floor with a twist, electronically controlled rain showers. Wonderla also has attractions specially designed for childre
+n, and these are gentle yet unusual like a kiddies free fall ride. It uses solar-heated water for all its pools during winter. It has conference facilities for up to 1,000 persons and features five restaurants with a total seating capacity of 1,150. It has locker rooms with over 2,350 lockers and restrooms and sho
+wers.[12] Wonderla Bangalore has been ranked 1st in India and 7th best in Asia by Tripadvisor for 2014, the highest for any Amusement park in India.[13]
+
+Wonderla Holidays opened its first luxury resort, an 84-room hotel complex spread over 100,000 square feet and operational since 2012.[14] The resort features includes a dedicated children's play area, other recreational and conferencing facilities.[7] The resort is located next to Wonderla Bangalore.[15] 
+Wonderla Hyderabad offers 25 land based rides and 18 water based attractions on 50 acres of land.[16] Wonderla Amusement Park is located 28 km away from Hyderabad City. 
+
+student@T22:~/ajce/rmca$ more -s wl.txt
+Wonderla Holidays, is one of the largest amusement park operators in India, head
+quartered near Bidadi, 28 kilometres (17 mi) from Bengaluru, Karnataka. Wonderla
+ Holidays Limited currently operates 3 amusement parks in Kochi, Bengaluru and H
+yderabad, and 1 resort in Bengaluru.[1] It is promoted by Kochouseph Chittilappi
+lly and his son Arun Chittilappilly as a subsidiary of V-Guard Industries. The f
+irst amusement park, Wonderla Kochi, was set up in 2000. The third amusement par
+k project Wonderla Hyderabad was commissioned in April 2016.[2] Wonderla holiday
+s is currently planning to open its 4th amusement park in Chennai, expected to b
+e operational by the end of 2018. Wonderla amusement parks offers a variety of r
+ides for all ages to enjoy, some of their rides are Recoil, Maverick, Y-Scream, 
+and their latest addition Mission interstellar. [3]
+In the year 2000, Kochouseph Chittilappilly started the flagship amusement water
+ themed park under the name Veegaland in Kochi, Kerala.[4][5] 75-crore INR was i
+nvested in the constructions and development of veegaland. In 2005 due to overwh
+elming success of the Veegaland project, Kochouseph Chittilappilly decided to bu
+ild another amusement park on a larger scale at a cost of 105 crore INR in Benga
+luru and named it Wonderla. It is spread over an area of 82 acres (33 ha).[4] In
+ order to establish Wonderla as a brand, Veegaland was renamed as Wonderla Kochi
+ in 2011.[6] The third amusement park, Wonderla Hyderabad was commissioned in Ap
+ril 2016.[7]
+The Kochi park was started in 2000 as Veegaland until it was re-branded in 2011.
+[6][8] This park is situated on the top of a hill at Pallikkara, 12 kilometres (
+7.5 mi) from the city center. The park was set up in 2000 and was designed by ar
+student@T22:~/ajce/rmca$ less wl.txt
+student@T22:~/ajce/rmca$ less -F wl.txt
+student@T22:~/ajce/rmca$ more -u wl.txt
+Wonderla Holidays, is one of the largest amusement park operators in India, headquartered near Bidadi, 28 kilometres (17 mi) from Bengaluru, K
+arnataka. Wonderla Holidays Limited currently operates 3 amusement parks in Kochi, Bengaluru and Hyderabad, and 1 resort in Bengaluru.[1] It i
+s promoted by Kochouseph Chittilappilly and his son Arun Chittilappilly as a subsidiary of V-Guard Industries. The first amusement park, Wonde
+rla Kochi, was set up in 2000. The third amusement park project Wonderla Hyderabad was commissioned in April 2016.[2] Wonderla holidays is cur
+rently planning to open its 4th amusement park in Chennai, expected to be operational by the end of 2018. Wonderla amusement parks offers a va
+riety of rides for all ages to enjoy, some of their rides are Recoil, Maverick, Y-Scream, and their latest addition Mission interstellar. [3]
+In the year 2000, Kochouseph Chittilappilly started the flagship amusement water themed park under the name Veegaland in Kochi, Kerala.[4][5] 
+75-crore INR was invested in the constructions and development of veegaland. In 2005 due to overwhelming success of the Veegaland project, Koc
+houseph Chittilappilly decided to build another amusement park on a larger scale at a cost of 105 crore INR in Bengaluru and named it Wonderla
+. It is spread over an area of 82 acres (33 ha).[4] In order to establish Wonderla as a brand, Veegaland was renamed as Wonderla Kochi in 2011
+.[6] The third amusement park, Wonderla Hyderabad was commissioned in April 2016.[7]
+The Kochi park was started in 2000 as Veegaland until it was re-branded in 2011.[6][8] This park is situated on the top of a hill at Pallikkar
+a, 12 kilometres (7.5 mi) from the city center. The park was set up in 2000 and was designed by architect Joseph John.[9]
+
+Wonderla Kochi is the first park in India to get ISO 14001 certificate for eco-friendliness and OHSAS 18001 certificate for safety.[10] The pa
+rk is spread over 30 acres of landscaped space with more than 50 amusement rides.[10] In July 2018, Wonderla Kochi was ranked eleventh in the 
+TripAdvisor 'Travellers' choice awards for amusement parks and water parks in Asia.[11] 
+The park features a wide variety of attractions including 55 land and water rides, a musical fountain and laser shows, and a virtual reality s
+how.[12] Wonderla Bangalore has a full-fledged dance floor with a twist, electronically controlled rain showers. Wonderla also has attractions
+ specially designed for children, and these are gentle yet unusual like a kiddies free fall ride. It uses solar-heated water for all its pools
+ during winter. It has conference facilities for up to 1,000 persons and features five restaurants with a total seating capacity of 1,150. It 
+has locker rooms with over 2,350 lockers and restrooms and showers.[12] Wonderla Bangalore has been ranked 1st in India and 7th best in Asia b
+y Tripadvisor for 2014, the highest for any Amusement park in India.[13]
+
+Wonderla Holidays opened its first luxury resort, an 84-room hotel complex spread over 100,000 square feet and operational since 2012.[14] The
+ resort features includes a dedicated children's play area, other recreational and conferencing facilities.[7] The resort is located next to W
+onderla Bangalore.[15] 
+Wonderla Hyderabad offers 25 land based rides and 18 water based attractions on 50 acres of land.[16] Wonderla Amusement Park is located 28 km
+ away from Hyderabad City. 
+
+student@T22:~/ajce/rmca$ less -n wl.txt
+student@T22:~/ajce/rmca$ less -s wl.txt
+student@T22:~/ajce/rmca$ 
+

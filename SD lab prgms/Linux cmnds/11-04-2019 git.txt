@@ -1,0 +1,64 @@
+student@T22:~$ cd sd
+student@T22:~/sd$ mkdir git
+student@T22:~/sd$ cd git
+student@T22:~/sd/git$ git clone https://github.com/Kiranmuringayil/sendcrepo.gitCloning into 'sendcrepo'...
+Username for 'https://github.com': kiranmuringayil
+Password for 'https://kiranmuringayil@github.com': 
+remote: Enumerating objects: 6, done.
+remote: Counting objects: 100% (6/6), done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 6 (delta 1), reused 5 (delta 0), pack-reused 0
+Unpacking objects: 100% (6/6), done.
+student@T22:~/sd/git$ cd firstrepo
+bash: cd: firstrepo: No such file or directory
+student@T22:~/sd/git$ git clone https://github.com/Kiranmuringayil/firstrepo.gitCloning into 'firstrepo'...
+Username for 'https://github.com': kiranmuringayil
+Password for 'https://kiranmuringayil@github.com': 
+remote: Enumerating objects: 7, done.
+remote: Counting objects: 100% (7/7), done.
+remote: Compressing objects: 100% (6/6), done.
+remote: Total 7 (delta 0), reused 7 (delta 0), pack-reused 0
+Unpacking objects: 100% (7/7), done.
+student@T22:~/sd/git$ cd firstrepo
+student@T22:~/sd/git/firstrepo$ git branch -d feature_x
+error: branch 'feature_x' not found.
+student@T22:~/sd/git/firstrepo$ git checkout feature_x
+Branch 'feature_x' set up to track remote branch 'feature_x' from 'origin'.
+Switched to a new branch 'feature_x'
+student@T22:~/sd/git/firstrepo$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+student@T22:~/sd/git/firstrepo$ git branch -d feature_x
+warning: deleting branch 'feature_x' that has been merged to
+         'refs/remotes/origin/feature_x', but not yet merged to HEAD.
+Deleted branch feature_x (was 2180c11).
+student@T22:~/sd/git/firstrepo$ git fetch origin master
+Username for 'https://github.com': kiranmuringayil
+Password for 'https://kiranmuringayil@github.com': 
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+From https://github.com/Kiranmuringayil/firstrepo
+ * branch            master     -> FETCH_HEAD
+   084029e..433f4b6  master     -> origin/master
+student@T22:~/sd/git/firstrepo$ git diff
+student@T22:~/sd/git/firstrepo$ git merge origin master
+Updating 084029e..433f4b6
+Fast-forward
+ sample.c | 3 +--
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+student@T22:~/sd/git/firstrepo$ git revert origin master
+[master ce38bd5] Revert "Update sample.c"
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+student@T22:~/sd/git/firstrepo$ git revert origin master
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+student@T22:~/sd/git/firstrepo$ git merge origin master
+Already up to date.
+student@T22:~/sd/git/firstrepo$ 
+

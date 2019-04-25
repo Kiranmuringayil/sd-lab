@@ -1,0 +1,81 @@
+student@T22:~$ cp
+cp: missing file operand
+Try 'cp --help' for more information.
+student@T22:~$ man cp
+student@T22:~$ 
+student@T22:~$ man cp
+student@T22:~$ mkdir ajce
+student@T22:~$ cat > mca.txt
+hai
+^C^X
+student@T22:~$ ls
+ajce       Downloads  examples.desktop   Music     session.php
+Desktop    exam2.js   login1session.php  Pictures  Templates
+Documents  exam.html  mca.txt            Public    Videos
+student@T22:~$ cp mca.txt ajce
+student@T22:~$ cd ajce
+student@T22:~/ajce$ ls
+mca.txt
+student@T22:~/ajce$ man cp
+student@T22:~/ajce$ cat > a.txt
+hellooo
+^C
+student@T22:~/ajce$ cat > b.txt
+koooii 
+^C
+student@T22:~/ajce$ mkdir rmca
+student@T22:~/ajce$ cp a.txt b.txt rmca
+student@T22:~/ajce$ cd rmca
+student@T22:~/ajce/rmca$ ls
+a.txt  b.txt
+student@T22:~/ajce/rmca$ man cp
+student@T22:~/ajce/rmca$ mkdir lmca
+student@T22:~/ajce/rmca$ cp -b a.txt lmca
+student@T22:~/ajce/rmca$ cd lmca
+student@T22:~/ajce/rmca/lmca$ ls
+a.txt
+student@T22:~/ajce/rmca/lmca$ cd ..
+student@T22:~/ajce/rmca$ man cp
+student@T22:~/ajce/rmca$ cp -i b.txt lmca
+student@T22:~/ajce/rmca$ cd lmca
+student@T22:~/ajce/rmca/lmca$ ls
+a.txt  b.txt
+student@T22:~/ajce/rmca/lmca$ cd ..
+student@T22:~/ajce/rmca$ cd ..
+student@T22:~/ajce$ mkdir stud
+student@T22:~/ajce$ ls
+a.txt  b.txt  mca.txt  rmca  stud
+student@T22:~/ajce$ cd stud
+student@T22:~/ajce/stud$ cp a.txt b.txt stud
+cp: target 'stud' is not a directory
+student@T22:~/ajce/stud$ cd mca
+bash: cd: mca: No such file or directory
+student@T22:~/ajce/stud$ cd ..
+student@T22:~/ajce$ cd rmca
+student@T22:~/ajce/rmca$ cp a.txt b.txt stud
+cp: target 'stud' is not a directory
+student@T22:~/ajce/rmca$ cd lmca
+student@T22:~/ajce/rmca/lmca$ cp a.txt b.txt stud
+cp: target 'stud' is not a directory
+student@T22:~/ajce/rmca/lmca$ ls
+a.txt  b.txt
+student@T22:~/ajce/rmca/lmca$ ls
+a.txt  b.txt
+student@T22:~/ajce/rmca/lmca$ cd ajce
+bash: cd: ajce: No such file or directory
+student@T22:~/ajce/rmca/lmca$ mkdir vc
+student@T22:~/ajce/rmca/lmca$ ls
+a.txt  b.txt  vc
+student@T22:~/ajce/rmca/lmca$ mkdir ab
+student@T22:~/ajce/rmca/lmca$ cp -r vc ab
+student@T22:~/ajce/rmca/lmca$ cd vc
+student@T22:~/ajce/rmca/lmca/vc$ ls
+student@T22:~/ajce/rmca/lmca/vc$ cd ab
+bash: cd: ab: No such file or directory
+student@T22:~/ajce/rmca/lmca/vc$ cd ..
+student@T22:~/ajce/rmca/lmca$ cd ab
+student@T22:~/ajce/rmca/lmca/ab$ ls
+vc
+student@T22:~/ajce/rmca/lmca/ab$ man cp
+student@T22:~/ajce/rmca/lmca/ab$ 
+
