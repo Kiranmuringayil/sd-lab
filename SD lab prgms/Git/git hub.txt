@@ -1,0 +1,182 @@
+student@U17:~$ ls
+'3d image'   Documents         '<invalid path>'          project1
+ dddd        Downloads         '<invalid path>.layout'   Public
+ Desktop     examples.desktop   Music                    Templates
+ dgfh        hhhhhhh            Pictures                 Videos
+student@U17:~$ cd Documents
+student@U17:~/Documents$ git init test
+Initialized empty Git repository in /home/student/Documents/test/.git/
+student@U17:~/Documents$ touch sample.c
+student@U17:~/Documents$ cd test
+student@U17:~/Documents/test$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	sample.c
+
+nothing added to commit but untracked files present (use "git add" to track)
+student@U17:~/Documents/test$ gedit README
+student@U17:~/Documents/test$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	README
+	sample.c
+
+nothing added to commit but untracked files present (use "git add" to track)
+student@U17:~/Documents/test$ git add README
+student@U17:~/Documents/test$ git add sample.c
+student@U17:~/Documents/test$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+	new file:   README
+	new file:   sample.c
+student@U17:~/Documents/test$ git config --global user.mail "kiranthomas@mca.ajce.in"
+student@U17:~/Documents/test$ git config --global user.name "kiranthomas"
+student@U17:~/Documents/test$ git config --global user.name "Kiranmuringayil"
+student@U17:~/Documents/test$ git commit -m "my first commit"
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'student@U17.(none)')
+student@U17:~/Documents/test$ git config --global user.name "Kiranmuringayil"
+student@U17:~/Documents/test$ git config --global user.mail "kiranthomas@mca.ajce.in"
+student@U17:~/Documents/test$ git commit -m "my first commit"
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'student@U17.(none)')
+student@U17:~/Documents/test$ git config --global user.name "Kiranmuringayil"
+student@U17:~/Documents/test$ git config --global user.wemail "kiranthomas@mca.ajce.in"
+student@U17:~/Documents/test$ git commit -m "my first commit"
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'student@U17.(none)')
+student@U17:~/Documents/test$ git config --global user.name "Kiranmuringayil"
+student@U17:~/Documents/test$ git config --global user.email "kiranthomas@mca.ajce.in"
+student@U17:~/Documents/test$ git commit -m "my first commit"
+[master (root-commit) 084029e] my first commit
+ 2 files changed, 8 insertions(+)
+student@U17:~/Documents/test$ git remote add origin httpd://github.com/Kiranmuringayil/firstrepo.git
+student@U17:~/Documents/test$ git push origin master
+fatal: Unable to find remote helper for 'httpd'
+student@U17:~/Documents/test$ git pull
+fatal: Unable to find remote helper for 'httpd'
+student@U17:~/Documents/test$ git pull firstrepo master
+fatal: 'firstrepo' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+student@U17:~/Documents/test$ git remote add origin httpd://github.com/Kiranmuringayil/firstrepo.git
+fatal: remote origin already exists.
+student@U17:~/Documents/test$ git push origin master
+fatal: Unable to find remote helper for 'httpd'
+student@U17:~/Documents/test$ git remote add origin https://github.com/Kiranmuringayil/firstrepo.git
+fatal: remote origin already exists.
+student@U17:~/Documents/test$ git push origin master
+fatal: Unable to find remote helper for 'httpd'
+student@U17:~/Documents/test$ git remote rm orgin
+fatal: No such remote: orgin
+student@U17:~/Documents/test$ git remote rm origin
+student@U17:~/Documents/test$ git remote add origin https://github.com/Kiranmuringayil/firstrepo.git
+student@U17:~/Documents/test$ git push origin master
+Username for 'https://github.com': Kiranmuringayil
+Password for 'https://Kiranmuringayil@github.com': 
+Counting objects: 4, done.
+Delta compression using up to 6 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 361 bytes | 361.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0)
+To https://github.com/Kiranmuringayil/firstrepo.git
+ * [new branch]      master -> master
+student@U17:~/Documents/test$ git branch
+* master
+student@U17:~/Documents/test$ git branch feature_x
+student@U17:~/Documents/test$ git checkout feature_x
+Switched to branch 'feature_x'
+student@U17:~/Documents/test$ geddit feature .c
+
+Command 'geddit' not found, did you mean:
+
+  command 'gedit' from snap gedit (3.30.2+git14.bed83e929)
+  command 'gedit' from deb gedit
+
+See 'snap info <snapname>' for additional versions.
+
+student@U17:~/Documents/test$ gedit feature.c
+student@U17:~/Documents/test$ git status
+On branch feature_x
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	feature.c
+
+nothing added to commit but untracked files present (use "git add" to track)
+student@U17:~/Documents/test$ git add feature.c
+student@U17:~/Documents/test$ git commit-m "my next commit"
+git: 'commit-m' is not a git command. See 'git --help'.
+
+The most similar command is
+	commit-tree
+student@U17:~/Documents/test$ git commit -m "my next commit"
+[feature_x 2180c11] my next commit
+ 1 file changed, 8 insertions(+)
+ create mode 100644 feature.c
+student@U17:~/Documents/test$ git push origin feature
+error: src refspec feature does not match any.
+error: failed to push some refs to 'https://github.com/Kiranmuringayil/firstrepo.git'
+student@U17:~/Documents/test$ git push origin feature_x
+Username for 'https://github.com': Kiranmuringayil
+Password for 'https://Kiranmuringayil@github.com': 
+Counting objects: 3, done.
+Delta compression using up to 6 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 431 bytes | 431.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+remote: 
+remote: Create a pull request for 'feature_x' on GitHub by visiting:
+remote:      https://github.com/Kiranmuringayil/firstrepo/pull/new/feature_x
+remote: 
+To https://github.com/Kiranmuringayil/firstrepo.git
+ * [new branch]      feature_x -> feature_x
+student@U17:~/Documents/test$ 
+
